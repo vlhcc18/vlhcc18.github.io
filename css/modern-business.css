@@ -1,0 +1,167 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.fa{
+    font: inherit;
+}
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.event-break {
+    color: white;
+    background-color: #524c67;
+}
+
+.event-break:hover {
+    background-color: #3b364a;
+}
+
+.h-strong {
+    font-weight: bold;
+}
+
+.spacer {
+    margin-top: 20px; /* define margin as you see fit */
+}
+
+.toggle-bar{
+    display: none;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    text-shadow: 1px 1px black;
+}
+
+.soon{
+    color: #DDD;
+}
+
+
+/*Twitter related*/
+.panel{
+    border-color: #343a40!important;
+    padding: 0px;
+    height: 100%;
+}
+
+.panel-heading{
+    color: white;
+    background-color: #343a40!important;
+}
+
+#twitter-feed-main{
+    
+}
+
+#twitter-feed{
+    display: none;
+}
+
+#twitter-ref{
+    display: none;
+}
+
+.twitter-timeline-rendered{
+    /*max-height: 200px;*/
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1000px){
+    .toggle-bar{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+        background: grey;
+        cursor: pointer;
+    }
+
+    .toggle-bar span{
+        position: absolute;
+        top: 50%;
+        margin-top: -2px;
+        height: 4px;
+        left: 8px;
+        right: 8px;
+        background: #FFF;
+        box-shadow: 0 10px 0 0 #FFF, 0 -10px 0 0 #FFF;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .google-frame{
+        min-height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .google-frame{
+        margin-top: 10px;
+        min-height: 350px;
+        width: 100%;
+    }
+
+    .resize-pic{
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+
+
+    .navbar-nav{
+        padding-top: 50px;
+    }
+
+    #twitter-ref{
+        text-align: center;
+        display: block;
+    }
+
+    .fa-twitter-square{
+        font-size: 2em;
+    }
+
+    #twitter-feed-main{
+        display: none;
+    }
+
+    .google-frame{
+        margin-top: 10px;
+        width: 100%;
+        min-height: 300px;
+    }
+}
+
