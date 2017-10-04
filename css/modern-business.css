@@ -14,6 +14,10 @@ body {
     }
 }
 
+.p-justify {
+  text-align: justify;
+}
+
 .fa{
     font: inherit;
 }
@@ -83,6 +87,8 @@ body {
   font-size: 13px;
   line-height: 0.1;
   border-radius: 30px;
+  color: white;
+  text-shadow: 2px 1px #404040;
 }
 
 .btn-circle-sm {
@@ -93,6 +99,8 @@ body {
   font-size: 20px;
   line-height: 1.65;
   border-radius: 30px;
+  color: white;
+  text-shadow: 2px 1px #404040;
 }
 
 .btn-circle-lg {
@@ -103,6 +111,14 @@ body {
   font-size: 30px;
   line-height: 2.00;
   border-radius: 130px;
+  color: white;
+  text-shadow: 2px 1px #404040;
+}
+
+.btn-circle-lg:hover {
+  color: white;
+  text-shadow: 2px 1px #404040;
+  opacity: .6;
 }
 
 
