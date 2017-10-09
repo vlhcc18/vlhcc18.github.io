@@ -89,6 +89,7 @@ body {
   border-radius: 30px;
   color: white;
   text-shadow: 2px 1px #404040;
+  background-position: left;
 }
 
 .btn-circle-sm {
@@ -101,6 +102,7 @@ body {
   border-radius: 30px;
   color: white;
   text-shadow: 2px 1px #404040;
+  background-position: left;
 }
 
 .btn-circle-lg {
@@ -113,6 +115,7 @@ body {
   border-radius: 130px;
   color: white;
   text-shadow: 2px 1px #404040;
+  background-position: left;
 }
 
 .btn-circle-lg:hover {
