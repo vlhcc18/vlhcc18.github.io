@@ -18,9 +18,7 @@ body {
   text-align: justify;
 }
 
-.fa{
-    font: inherit;
-}
+
 .carousel-item {
     height: 65vh;
     min-height: 300px;
