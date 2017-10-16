@@ -18,6 +18,10 @@ body {
   text-align: justify;
 }
 
+.navbar-dark {
+  padding-bottom: 8px;
+}
+
 
 .carousel-item {
     height: 65vh;
