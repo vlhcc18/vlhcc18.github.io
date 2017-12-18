@@ -71,6 +71,10 @@ body {
     color: #DDD;
 }
 
+.share{
+    vertical-align: text-top;
+}
+
 .btn-circle {
   width: 49px;
   height: 49px;
