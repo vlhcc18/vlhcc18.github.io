@@ -75,6 +75,14 @@ body {
     vertical-align: text-top;
 }
 
+.fb-share-button{
+  vertical-align: text-bottom;
+}
+
+.twitter-share-button{
+  vertical-align: text-bottom;
+}
+
 .btn-circle {
   width: 49px;
   height: 49px;
