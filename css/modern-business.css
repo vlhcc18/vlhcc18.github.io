@@ -138,12 +138,15 @@ body {
   opacity: .6;
 }
 
+.list-group-item-hover:hover{
+  background-color: #c9c9c9;
+}
 
 /*Twitter related*/
 .panel{
     border-color: #343a40!important;
     padding: 0px;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .panel-heading{
@@ -255,3 +258,130 @@ body {
     }
 }
 
+/** Tooltip **/
+
+.tool-tip {
+    position: relative;
+    display: inline-block;
+    zcursor: help;
+}
+.tool-tip .tool-tiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .6s;
+}
+.tool-tip:hover .tool-tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.tool-tip .tool-tiptext2 {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+}
+.tool-tip:hover .tool-tiptext2 {
+    visibility: visible;
+}
+.tool-tip-right {
+  top: -5px;
+  left: 125%;  
+}
+.tool-tip-right2 {
+  top: -5px;
+  left: 105%;  
+}
+
+.tool-tip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tool-tip-bottom {
+  top: 135%;
+  left: 50%;  
+  margin-left: -60px;
+}
+
+.tool-tip-bottom2 {
+  top: 125%;
+  left: 50%;  
+  margin-left: -60px;
+}
+
+.tool-tip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.tool-tip-top {
+  bottom: 125%;
+  left: 50%;  
+  margin-left: -60px;
+}
+.tool-tip-top2 {
+  bottom: 115%;
+  left: 50%;  
+  margin-left: -60px;
+}
+
+.tool-tip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tool-tip-left {
+  top: -5px;
+  bottom:auto;
+  right: 128%;  
+}
+
+.tool-tip-left2 {
+  top: -5px;
+  bottom:auto;
+  right: 105%;  
+}
+
+.tool-tip-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #555;
+}
