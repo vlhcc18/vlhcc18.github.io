@@ -74,29 +74,40 @@
 
   <script type="text/javascript">
   	$( document ).ready(function() {
-    	var today = new Date();
-    	
-		var dateAbstract = new Date("04/06/2018");
-		var datePaper = new Date("04/13/2018");
-		var dateReview = new Date("06/14/2018");
-		var dateRebuttal = new Date("06/22/2018");
-		var dateNotification = new Date("07/06/2018");
-		var dateCameraReady = new Date("07/27/2018");
+     var today = new Date();
 
-		var diffAbstract = Math.ceil((Math.abs(dateAbstract.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
-		var diffPaper = Math.ceil((Math.abs(datePaper.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
-		var diffReview = Math.ceil((Math.abs(dateReview.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
-		var diffRebuttal = Math.ceil((Math.abs(dateRebuttal.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
-		var diffNotification = Math.ceil((Math.abs(dateNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
-		var diffCameraReady = Math.ceil((Math.abs(dateCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      // Main Conference Dates
+      var dateAbstract = new Date("04/06/2018");
+      var datePaper = new Date("04/13/2018");
+      var dateReview = new Date("06/14/2018");
+      var dateRebuttal = new Date("06/22/2018");
+      var dateNotification = new Date("07/06/2018");
+      var dateCameraReady = new Date("07/27/2018");
 
-    	$("#abstract-date-badge").text(diffAbstract);
-    	$("#paper-date-badge").text(diffPaper);
+      var diffAbstract = Math.ceil((Math.abs(dateAbstract.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffPaper = Math.ceil((Math.abs(datePaper.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffReview = Math.ceil((Math.abs(dateReview.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffRebuttal = Math.ceil((Math.abs(dateRebuttal.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffNotification = Math.ceil((Math.abs(dateNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffCameraReady = Math.ceil((Math.abs(dateCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+
+      // Workshop Dates
+      var dateWorkshopProposal = new Date("03/23/2018");
+      var dateWorkshopNotification = new Date("04/06/2018");
+
+      var diffWorkshopProposal = Math.ceil((Math.abs(dateWorkshopProposal.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffWorkshopNotification = Math.ceil((Math.abs(dateWorkshopNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+
+
+      $("#ws-proposal-date-badge").text(diffWorkshopProposal);
+      $("#ws-notification-date-badge").text(diffWorkshopNotification);
+      $("#abstract-date-badge").text(diffAbstract);
+      $("#paper-date-badge").text(diffPaper);
     	//$("#review-date-badge").text(diffReview);
     	//$("#rebuttal-date-badge").text(diffRebuttal);
     	//$("#notification-date-badge").text(diffPaper);
     	//$("#camera-ready-date-badge").text(diffCameraReady);
-	});
+    });
   	
   </script>
 </head>
@@ -313,7 +324,7 @@
             <div id="important-dates-feed" class="panel">
               <div class="panel-heading clearfix">
                 <div class="panel-title">
-                  Important Dates 
+                  Upcoming Dates 
                   <div class="tool-tip badge badge-pill" style="float: right;">
                     <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
                     <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
@@ -323,29 +334,56 @@
               <div id="twitter-timeline-frame">
                 <div class="list-group list-group-flush" style="margin-bottom: 0px;">
                   <a href="#" class="list-group-item list-group-item-hover">
-                    <b>6 April 2018</b> <span id="abstract-date-badge" class="badge badge-primary badge-pill"></span>
+                    <b>23 March 2018</b> 
+                    <span class="badge badge-warning badge-pill tool-tip">WS<span class="tool-tiptext tool-tip-top">Workshops</span></span>
+                    <span id="ws-proposal-date-badge" class="badge badge-primary badge-pill"></span>
+                    <p>Workshop Proposal</p>
+                  </a> 
+                  <a href="#" class="list-group-item list-group-item-hover">
+                    <b>6 April 2018</b> 
+                    <span class="badge badge-warning badge-pill tool-tip">WS<span class="tool-tiptext tool-tip-top">Workshops</span></span>
+                    <span id="ws-notification-date-badge" class="badge badge-primary badge-pill"></span>
+                    <p>Proposal Notification</p>
+                  </a> 
+                  <a href="#" class="list-group-item list-group-item-hover">
+                    <b>6 April 2018</b> 
+                    <span class="badge badge-info badge-pill tool-tip">M<span class="tool-tiptext tool-tip-top">Main Conference</span></span>
+                    <span id="abstract-date-badge" class="badge badge-primary badge-pill"></span>
                     <p>Abstract Submission</p>
                   </a> 
                   <a href="#" class="list-group-item list-group-item-hover">
-                    <b>13 April 2018</b> <span id="paper-date-badge" class="badge badge-primary badge-pill"></span>
+                    <b>13 April 2018</b> 
+                    <span class="badge badge-info badge-pill tool-tip">M<span class="tool-tiptext tool-tip-top">Main Conference</span></span>
+                    <span id="paper-date-badge" class="badge badge-primary badge-pill"></span>
                     <p>Paper Submission</p>
                   </a>
+
                   <a href="#" class="list-group-item list-group-item-hover">
-                    <b>15 June 2018</b> <span id="review-date-badge" class="badge badge-primary badge-pill"></span>
+                    <b>15 June 2018</b> 
+                    <span class="badge badge-info badge-pill tool-tip">M<span class="tool-tiptext tool-tip-top">Main Conference</span></span>
+                    <span id="review-date-badge" class="badge badge-primary badge-pill"></span>
                     <p>Review Notifications</p>
                   </a>
                   <a href="#" class="list-group-item list-group-item-hover">
-                    <b>22 June 2018</b> <span id="rebuttal-date-badge" class="badge badge-primary badge-pill"></span>
+                    <b>22 June 2018</b> 
+                    <span class="badge badge-info badge-pill tool-tip">M<span class="tool-tiptext tool-tip-top">Main Conference</span></span>
+                    <span id="rebuttal-date-badge" class="badge badge-primary badge-pill"></span>
                     <p>Rebuttal Deadline</p>
                   </a>
+                  <!--
                   <a href="#" class="list-group-item list-group-item-hover">
-                    <b>6 July 2018</b> <span id="notification-date-badge" class="badge badge-primary badge-pill"></span>
+                    <b>6 July 2018</b> 
+                    <span class="badge badge-info badge-pill tool-tip">M<span class="tool-tiptext tool-tip-top">Main Conference</span></span>
+                    <span id="notification-date-badge" class="badge badge-primary badge-pill"></span>
                     <p>Paper Notification</p>
                   </a>
                   <a href="#" class="list-group-item list-group-item-hover">
-                    <b>27 July 2018</b> <span id="camera-ready-date-badge" class="badge badge-primary badge-pill"></span>
+                    <b>27 July 2018</b> 
+                    <span class="badge badge-info badge-pill tool-tip">M<span class="tool-tiptext tool-tip-top">Main Conference</span></span>
+                    <span id="camera-ready-date-badge" class="badge badge-primary badge-pill"></span>
                     <p>Camera Ready Copy</p>
                   </a>
+                -->
                 </div>
               </div>
             </div>
