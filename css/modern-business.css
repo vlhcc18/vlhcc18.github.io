@@ -385,3 +385,9 @@ body {
     border-style: solid;
     border-color: transparent transparent transparent #555;
 }
+
+/* Blockquote*/
+.blockquote-flush{
+  padding: 0px 22px; 
+  margin-bottom: 0px;
+}
