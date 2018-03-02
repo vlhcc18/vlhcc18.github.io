@@ -159,12 +159,14 @@ body {
   margin-top: 35px; 
   width: 100%; 
   right: 15px; 
-  top: 63%;
   opacity: 0.45;
   position: absolute; 
   z-index: 1; 
   color: white; 
   text-shadow: 2px 1px rgba(0, 0, 0, 0.60);
+  display: inline-block;
+  position: absolute;
+  top: 63%;
 }
 
 #twitter-feed-main{
