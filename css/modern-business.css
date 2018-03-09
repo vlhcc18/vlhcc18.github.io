@@ -169,6 +169,16 @@ body {
   top: 63%;
 }
 
+.nopadding {
+  padding: 0 10px 0 0 !important;
+}
+
+.more-info-link {
+    color: #697882;
+    position: absolute;
+    bottom: 10px;
+}
+
 #twitter-feed-main{
     
 }
@@ -191,6 +201,11 @@ body {
   margin-bottom: 10px;
   margin-top: 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-block {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  min-height: 180px;
 }
 
 .sponsor:hover {
