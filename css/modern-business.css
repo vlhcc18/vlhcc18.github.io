@@ -173,6 +173,12 @@ body {
   padding: 0 10px 0 0 !important;
 }
 
+i.tiny {
+  color: #697882;
+  margin-left: 2%;
+  font-size: 85%;
+}
+
 .more-info-link {
     color: #697882;
     position: absolute;
