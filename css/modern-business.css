@@ -168,6 +168,28 @@ body {
   position: absolute;
   top: 63%;
 }
+/*
+#latest-news {
+  background-color: #343a40;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  padding: 2px 5px 10px 10px;
+} */
+
+.nopadding {
+  padding: 0 10px 0 0 !important;
+}
+
+i.tiny {
+  color: #697882;
+  margin-left: 2%;
+  font-size: 85%;
+}
+
+.more-info-link {
+    color: #697882;
+    position: absolute;
+    bottom: 10px;
+}
 
 #twitter-feed-main{
     
@@ -191,6 +213,11 @@ body {
   margin-bottom: 10px;
   margin-top: 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-block {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  min-height: 180px;
 }
 
 .sponsor:hover {
