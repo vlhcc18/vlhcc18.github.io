@@ -168,15 +168,17 @@ body {
   position: absolute;
   top: 63%;
 }
-/*
-#latest-news {
-  background-color: #343a40;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-  padding: 2px 5px 10px 10px;
-} */
 
 .nopadding {
   padding: 0 10px 0 0 !important;
+}
+
+.nav-selector {
+  color: white;
+}
+
+.nav-selector:hover {
+  color: #959595;
 }
 
 i.tiny {
@@ -305,6 +307,7 @@ i.tiny {
     position: relative;
     display: inline-block;
     zcursor: help;
+    color: #959595;
 }
 .tool-tip .tool-tiptext {
     visibility: hidden;
