@@ -46,7 +46,24 @@
   <script type='text/javascript' src='js/plugins/jquery.newstape.js'></script>
   <script type='text/javascript' src='js/plugins/imagesloaded.min-3.js'></script>
 
+  <script type="text/javascript">
+    function openTab(tab) {
+      var x = document.getElementsByClassName("tab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
 
+      var x = document.getElementsByClassName("nav-selector");
+      for (i = 0; i < x.length; i++) {
+        x[i].classList.remove("active");
+      }
+
+      var link = "nav-"+tab;
+      document.getElementById(link).classList.add("active");
+      document.getElementById(tab).style.display = "block";
+      
+    }
+  </script>
 
   <script>
     (function($){
@@ -74,7 +91,8 @@
 
   <script type="text/javascript">
   	$( document ).ready(function() {
-     var today = new Date();
+
+      var today = new Date();
 
       // Main Conference Dates
       var dateAbstract = new Date("04/06/2018");
@@ -316,124 +334,6 @@
                 </div>
                 <div class="spacer"></div>
                 <!-- NEWS -->
-
-
-                <!--Carousel Wrapper-->
-                <div id="latest-news" class="carousel slide carousel-multi-item panel" data-ride="carousel">
-
-
-
-                  <!--Controls-->
-                  <div class="panel-heading clearfix">
-                    <div class="panel-title">Latest News</div>
-                  </div>
-                  <!--/.Controls-->
-
-                  <!--Slides-->
-                  <div class="carousel-inner" style="padding: 2% 0 1% 0;" role="listbox">
-
-                    <!--First slide-->
-                    <div class="carousel-item active" style="height: 100%; min-height: auto;">
-
-                      <div class="col-sm-4 clearfix d-md-block">
-                        <div class="card mb-2 news-block">
-                          <div class="spacer"></div>
-                          <div class="col-sm-12">
-                            <span class="col-xs-3 nopadding">
-                              <img class="img-fluid img-circle" src="images/rodrigo_sc.jpg" alt="Rodrigo">
-                            </span>
-                            <span class="col-xs-9 nopadding">
-                              <b style="margin-left: 2%; vertical-align: top;">Keynote Speaker</b><br/>
-                              <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Mar. 12, 2018</small></i>
-                            </span>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text"><a href="https://medium.com/@rodrigo_sc" target="_blank">Rodrigo Sousa Coutinho</a>, from <a href="https://www.outsystems.com" target="_blank">Outsystems</a>, is our second confirmed keynote speaker.</p>
-                            <a href="keynotes.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-sm-4 clearfix d-md-block">
-                        <div class="card mb-2 news-block">
-                          <div class="spacer"></div>
-                          <div class="col-sm-12">
-                            <span class="col-xs-3 nopadding">
-                              <img class="img-fluid img-circle" src="images/sponsors/outsystems.png" alt="Outsystems">
-                            </span>
-                            <span class="col-xs-9 nopadding">
-                              <b style="margin-left: 2%; vertical-align: top;">First Sponsor</b><br/>
-                              <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Mar. 2, 2018</small></i>
-                            </span>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text"><a href="https://www.outsystems.com" target="_blank">Outsystems</a> is our first confirmed <i>Silver Sponsor</i>.</p>
-                            <a href="sponsors.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-sm-4 clearfix d-md-block">
-                        <div class="card mb-2 news-block">
-                          <div class="spacer"></div>
-                          <div class="col-sm-12">
-                            <span class="col-xs-3 nopadding">
-                              <img class="img-fluid img-circle" src="images/geraldine.jpeg" alt="Geraldine Fitzpatrick">
-                            </span>
-                            <span class="col-xs-9 nopadding">
-                              <b style="margin-left: 2%; vertical-align: top;">Keynote Speaker</b><br/>
-                              <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Feb. 26, 2018</small></i>
-                            </span>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text"><a href="http://igw.tuwien.ac.at/hci/people/gfitzpatrick" target="_blank">Geraldine Fitzpatrick</a> is now confirmed as our first keynote speaker.</p>
-                            <a href="keynotes.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item" style="height: 100%; min-height: auto;">
-
-                      <div class="col-sm-4 clearfix d-md-block">
-                        <div class="card mb-2 news-block">
-                          <div class="spacer"></div>
-                          <div class="col-sm-12">
-                            <span class="col-xs-3 nopadding">
-                              <img class="img-fluid img-circle" src="images/sponsors_flat.png" alt="Sponsors">
-                            </span>
-                            <span class="col-xs-9 nopadding">
-                              <b style="margin-left: 2%; vertical-align: top;">Sponsors</b><br/>
-                              <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Feb. 6, 2018</small></i>
-                            </span>
-                          </div>
-                          <div class="card-body">
-                            <p class="card-text">The call for sponsors is now open! Are you interested?</p>
-                            <a href="call_sponsors.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                    
-                    <!--/.Second slide-->
-
-                  </div>
-                  <div class="controls-top text-center">
-                    <a class="btn-floating" href="#latest-news" data-slide="prev"><i class="text-dark fa fa-arrow-circle-o-left fa-2x"></i></a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a class="btn-floating" href="#latest-news" data-slide="next"><i class="text-dark fa fa-arrow-circle-o-right fa-2x"></i></a>
-                  </div>
-                  
-                  <!--/.Slides-->
-
-                </div>
-                <!--/.Carousel Wrapper-->
-
-
                 <!--/ NEWS -->
 
               </div>
@@ -446,48 +346,69 @@
             <div id="important-dates-feed" class="panel">
               <div class="panel-heading clearfix">
                 <div class="panel-title">
-                  Upcoming Dates 
-                  <div class="tool-tip badge badge-pill" style="float: right;">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
-                    <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
-                  </div>
+                  <nav class="nav nav-fill nav-pills">
+                    <a id="nav-upcoming-dates" class="nav-selector nav-item nav-link active" href="#!" onclick="openTab('upcoming-dates')">
+                      Upcoming Dates
+                    </a>
+                    <a id="nav-latest-news" class="nav-selector nav-item nav-link" href="#!" onclick="openTab('latest-news')">
+                      Latest News
+                    </a>
+                  </nav>
+                  
                 </div>
               </div>
-              <div id="twitter-timeline-frame">
-                <div class="list-group list-group-flush" style="margin-bottom: 0px;">
-                  <a href="#" class="list-group-item list-group-item-hover">
-                    <b>23 March 2018</b> 
-                    <span id="ws-proposal-date-badge" class="badge badge-info badge-pill"></span>
-                    <blockquote class="blockquote blockquote-flush">
-                      <p class="h4">Workshop Proposal</p>
-                      <footer>WORKSHOPS</footer>
-                    </blockquote>
+              <div id="upcoming-dates" class="tab">
+                <div id="twitter-timeline-frame">
+                  <div class="list-group list-group-flush" style="margin-bottom: 0px;">
+                    <a href="#" class="list-group-item list-group-item-hover">
+                      <b>23 March 2018</b> 
+                      <span id="ws-proposal-date-badge" class="badge badge-info badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Workshop Proposal</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>WORKSHOPS</footer>
+                      </blockquote>
 
-                  </a> 
-                  <a href="#" class="list-group-item list-group-item-hover">
-                    <b>6 April 2018</b> 
-                    <span id="ws-notification-date-badge" class="badge badge-info badge-pill"></span>
-                    <blockquote class="blockquote blockquote-flush">
-                      <p class="h4">Proposal Notification</p>
-                      <footer>WORKSHOPS</footer>
-                    </blockquote>
-                  </a> 
-                  <a href="#" class="list-group-item list-group-item-hover">
-                    <b>6 April 2018</b> 
-                    <span id="abstract-date-badge" class="badge badge-info badge-pill"></span>
-                    <blockquote class="blockquote blockquote-flush">
-                      <p class="h4">Abstract Submission</p>
-                      <footer>MAIN CONFERENCE</footer>
-                    </blockquote>
-                  </a> 
-                  <a href="#" class="list-group-item list-group-item-hover">
-                    <b>13 April 2018</b> 
-                    <span id="paper-date-badge" class="badge badge-info badge-pill"></span>
-                    <blockquote class="blockquote blockquote-flush">
-                      <p class="h4">Paper Submission</p>
-                      <footer>MAIN CONFERENCE</footer>
-                    </blockquote>
-                  </a>
+                    </a> 
+                    <a href="#" class="list-group-item list-group-item-hover">
+                      <b>6 April 2018</b> 
+                      <span id="ws-notification-date-badge" class="badge badge-info badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Proposal Notification</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>WORKSHOPS</footer>
+                      </blockquote>
+                    </a> 
+                    <a href="#" class="list-group-item list-group-item-hover">
+                      <b>6 April 2018</b> 
+                      <span id="abstract-date-badge" class="badge badge-info badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Abstract Submission</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>MAIN CONFERENCE</footer>
+                      </blockquote>
+                    </a> 
+                    <a href="#" class="list-group-item list-group-item-hover">
+                      <b>13 April 2018</b> 
+                      <span id="paper-date-badge" class="badge badge-info badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Paper Submission</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>MAIN CONFERENCE</footer>
+                      </blockquote>
+                    </a>
                   <!--
                   <a href="#" class="list-group-item list-group-item-hover">
                     <b>15 June 2018</b> 
@@ -526,86 +447,189 @@
                   </a>
                 -->
               </div>
+              
             </div>
           </div>
-          <div class="spacer"></div>
-          <div id="twitter-feed-main" class="panel">
-            <div class="panel-heading clearfix">
-              <div class="panel-title">Twitter</div>
+          <div id="latest-news" style="display:none;" class="tab carousel slide carousel-multi-item" data-ride="carousel">
+
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active" style="height: 100%; min-height: auto;">
+
+                <div class="col-sm-12 clearfix d-md-block">
+                  <div class="card mb-2 news-block">
+                    <div class="spacer"></div>
+                    <div class="col-sm-12">
+                      <span class="col-xs-3 nopadding">
+                        <img class="img-fluid img-circle" src="images/rodrigo_sc.jpg" alt="Rodrigo">
+                      </span>
+                      <span class="col-xs-9 nopadding">
+                        <b style="margin-left: 2%; vertical-align: top;">Keynote Speaker</b><br/>
+                        <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Mar. 12, 2018</small></i>
+                      </span>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><a href="https://medium.com/@rodrigo_sc" target="_blank">Rodrigo Sousa Coutinho</a>, from <a href="https://www.outsystems.com" target="_blank">Outsystems</a>, is our second confirmed keynote speaker.</p>
+                      <a href="keynotes.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 clearfix d-md-block">
+                  <div class="card mb-2 news-block">
+                    <div class="spacer"></div>
+                    <div class="col-sm-12">
+                      <span class="col-xs-3 nopadding">
+                        <img class="img-fluid img-circle" src="images/sponsors/outsystems.png" alt="Outsystems">
+                      </span>
+                      <span class="col-xs-9 nopadding">
+                        <b style="margin-left: 2%; vertical-align: top;">First Sponsor</b><br/>
+                        <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Mar. 2, 2018</small></i>
+                      </span>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><a href="https://www.outsystems.com" target="_blank">Outsystems</a> is our first confirmed <i>Silver Sponsor</i>.</p>
+                      <a href="sponsors.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <!--/.First slide-->
+
+              <!--Second slide-->
+              <div class="carousel-item" style="height: 100%; min-height: auto;">
+
+                <div class="col-sm-12 clearfix d-md-block">
+                  <div class="card mb-2 news-block">
+                    <div class="spacer"></div>
+                    <div class="col-sm-12">
+                      <span class="col-xs-3 nopadding">
+                        <img class="img-fluid img-circle" src="images/geraldine.jpeg" alt="Geraldine Fitzpatrick">
+                      </span>
+                      <span class="col-xs-9 nopadding">
+                        <b style="margin-left: 2%; vertical-align: top;">Keynote Speaker</b><br/>
+                        <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Feb. 26, 2018</small></i>
+                      </span>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><a href="http://igw.tuwien.ac.at/hci/people/gfitzpatrick" target="_blank">Geraldine Fitzpatrick</a> is now confirmed as our first keynote speaker.</p>
+                      <a href="keynotes.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 clearfix d-md-block">
+                  <div class="card mb-2 news-block">
+                    <div class="spacer"></div>
+                    <div class="col-sm-12">
+                      <span class="col-xs-3 nopadding">
+                        <img class="img-fluid img-circle" src="images/sponsors_flat.png" alt="Sponsors">
+                      </span>
+                      <span class="col-xs-9 nopadding">
+                        <b style="margin-left: 2%; vertical-align: top;">Sponsors</b><br/>
+                        <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Feb. 6, 2018</small></i>
+                      </span>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">The call for sponsors is now open! Are you interested?</p>
+                      <a href="call_sponsors.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!--/.Second slide-->
+
             </div>
-            <div id="twitter-timeline-frame">
-              <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-height="400px" data-chrome="transparent" >Tweets by vlhcc</a> 
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="controls-top text-center">
+              <a class="btn-floating" href="#latest-news" data-slide="prev"><i class="text-dark fa fa-arrow-circle-o-left fa-2x"></i></a>
+              &nbsp;&nbsp;&nbsp;
+              <a class="btn-floating" href="#latest-news" data-slide="next"><i class="text-dark fa fa-arrow-circle-o-right fa-2x"></i></a>
             </div>
           </div>
         </div>
-        <div id="twitter-ref" class="col-sm-3">
-          <div class="spacer"></div>
-          <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
+        <div class="spacer"></div>
+        <div id="twitter-feed-main" class="panel">
+          <div class="panel-heading clearfix">
+            <div class="panel-title">Twitter</div>
+          </div>
+          <div id="twitter-timeline-frame">
+            <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-height="400px" data-chrome="transparent" >Tweets by vlhcc</a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
         </div>
       </div>
+      <div id="twitter-ref" class="col-sm-3">
+        <div class="spacer"></div>
+        <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
+      </div>
     </div>
-    <div class="section-line"></div>
-    <!-- /.row -->
-  </section>
+  </div>
+  <div class="section-line"></div>
+  <!-- /.row -->
+</section>
 
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-3 text-white">
+        <h4 style="font-weight: bold;">VL/HCC 18</h4>
+        <div class="row">
+          <div class="col-sm-2">
+            <i class="fa fa-home"></i>
+          </div>
+          <div class="col-sm-10">
+            Universidade NOVA de Lisboa<br/>
+            Campus de Campolide<br/>
+            1099-085 Lisboa<br/>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-2 col-sm-3 text-white">
+        <h4>Attending</h4>
+        <a href="important_dates.html" class="text-white">Important Dates</a>
+        <!-- <a href="registration.html" class="text-white">Registration</a> -->
+
+        <br/>
+        <a href="venue.html" class="text-white">Venue</a><br/>
+        <a href="hotels.html" class="text-white">Hotels</a>
+      </div>
+      <div class="col-md-2 col-sm-3 text-white">
+        <h4>Calls</h4>
+        <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
+        <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
+        <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
+      </div>
+      <div class="col-md-2 col-sm-3 text-white">
+        <a href="program_overview.html" class="text-white"> <h4>Program</h4> </a>
+      </div>
+      <div class="col-md-2 col-sm-3 text-white">
+        <h4>Committees</h4>
+        <a href="organizers.html" class="text-white">Org. Committee</a><br/>
+        <a href="program_committee.html" class="text-white">Prog. Committee</a>
+      </div>
+    </div>
+    <div class="row spacer">
+      <div class="col-sm-12 text-center">
+        <!-- <p class="m-0 text-center text-white">Copyright &copy; <a href="http://greenlab.di.uminho.pt" style="color: white; font-weight: bold;">Green Lab</a></p> -->
+      </div>
+    </div>
+  </div>
   <!-- /.container -->
+</footer>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-3 text-white">
-          <h4 style="font-weight: bold;">VL/HCC 18</h4>
-          <div class="row">
-            <div class="col-sm-2">
-              <i class="fa fa-home"></i>
-            </div>
-            <div class="col-sm-10">
-              Universidade NOVA de Lisboa<br/>
-              Campus de Campolide<br/>
-              1099-085 Lisboa<br/>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-2 col-sm-3 text-white">
-          <h4>Attending</h4>
-          <a href="important_dates.html" class="text-white">Important Dates</a>
-          <!-- <a href="registration.html" class="text-white">Registration</a> -->
-
-          <br/>
-          <a href="venue.html" class="text-white">Venue</a><br/>
-          <a href="hotels.html" class="text-white">Hotels</a>
-        </div>
-        <div class="col-md-2 col-sm-3 text-white">
-          <h4>Calls</h4>
-          <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
-          <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
-          <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
-        </div>
-        <div class="col-md-2 col-sm-3 text-white">
-          <a href="program_overview.html" class="text-white"> <h4>Program</h4> </a>
-        </div>
-        <div class="col-md-2 col-sm-3 text-white">
-          <h4>Committees</h4>
-          <a href="organizers.html" class="text-white">Org. Committee</a><br/>
-          <a href="program_committee.html" class="text-white">Prog. Committee</a>
-        </div>
-      </div>
-      <div class="row spacer">
-        <div class="col-sm-12 text-center">
-          <!-- <p class="m-0 text-center text-white">Copyright &copy; <a href="http://greenlab.di.uminho.pt" style="color: white; font-weight: bold;">Green Lab</a></p> -->
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 
 </body>
