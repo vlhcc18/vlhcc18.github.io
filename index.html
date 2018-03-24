@@ -110,34 +110,39 @@
       var diffCameraReady = Math.ceil((Math.abs(dateCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
 
       // Workshop Dates
-      var dateWorkshopProposal = new Date("03/23/2018");
+      // var dateWorkshopProposal = new Date("03/23/2018");
       var dateWorkshopNotification = new Date("04/06/2018");
 
-      var diffWorkshopProposal = Math.ceil((Math.abs(dateWorkshopProposal.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      // var diffWorkshopProposal = Math.ceil((Math.abs(dateWorkshopProposal.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
       var diffWorkshopNotification = Math.ceil((Math.abs(dateWorkshopNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
 
-
+      /*
       $("#ws-proposal-date-badge").text(diffWorkshopProposal);
       if (diffWorkshopProposal === "1 days left") {
         $("#ws-proposal-warning-badge").text("Today!");
       }
+      */
 
       $("#ws-notification-date-badge").text(diffWorkshopNotification);
       if (diffWorkshopNotification === "1 days left") {
-        $("#ws-notification-warning-badge").text("Today");
+        $("#ws-notification-warning-badge").text("Today!");
       }
 
       $("#abstract-date-badge").text(diffAbstract);
       if (diffAbstract === "1 days left") {
-        $("#abstract-warning-badge").text("Today");
+        $("#abstract-warning-badge").text("Today!");
       }
 
       $("#paper-date-badge").text(diffPaper);
       if (diffPaper === "1 days left") {
-        $("#paper-warning-badge").text("Today");
+        $("#paper-warning-badge").text("Today!");
       }
 
-    	//$("#review-date-badge").text(diffReview);
+      $("#review-date-badge").text(diffReview);
+      if (diffReview === "1 days left") {
+        $("#review-warning-badge").text("Today!");
+      }
+
     	//$("#rebuttal-date-badge").text(diffRebuttal);
     	//$("#notification-date-badge").text(diffPaper);
     	//$("#camera-ready-date-badge").text(diffCameraReady);
@@ -377,23 +382,9 @@
                 <div id="twitter-timeline-frame">
                   <div class="list-group list-group-flush" style="margin-bottom: 0px;">
                     <a href="#" class="list-group-item list-group-item-hover">
-                      <b>23 March 2018</b> 
-                      <span id="ws-proposal-date-badge" class="badge badge-info badge-pill"></span>
-                      <span id="ws-proposal-warning-badge" class="badge badge-danger badge-pill"></span>
-                      <blockquote class="blockquote blockquote-flush">
-                        <p class="h4">Workshop Proposal</p>
-                        <div class="tool-tip badge badge-pill" style="float: right;">
-                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
-                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
-                        </div>
-                        <footer>WORKSHOPS</footer>
-                      </blockquote>
-
-                    </a> 
-                    <a href="#" class="list-group-item list-group-item-hover">
                       <b>6 April 2018</b> 
                       <span id="ws-notification-date-badge" class="badge badge-info badge-pill"></span>
-                      <span id="ws-notification-warning-badge" class="badge badge-success badge-pill"></span>
+                      <span id="ws-notification-warning-badge" class="badge badge-danger badge-pill"></span>
                       <blockquote class="blockquote blockquote-flush">
                         <p class="h4">Proposal Notification</p>
                         <div class="tool-tip badge badge-pill" style="float: right;">
@@ -406,7 +397,7 @@
                     <a href="#" class="list-group-item list-group-item-hover">
                       <b>6 April 2018</b> 
                       <span id="abstract-date-badge" class="badge badge-info badge-pill"></span>
-                      <span id="abstract-warning-badge" class="badge badge-success badge-pill"></span>
+                      <span id="abstract-warning-badge" class="badge badge-danger badge-pill"></span>
                       <blockquote class="blockquote blockquote-flush">
                         <p class="h4">Abstract Submission</p>
                         <div class="tool-tip badge badge-pill" style="float: right;">
@@ -419,9 +410,22 @@
                     <a href="#" class="list-group-item list-group-item-hover">
                       <b>13 April 2018</b> 
                       <span id="paper-date-badge" class="badge badge-info badge-pill"></span>
-                      <span id="paper-warning-badge" class="badge badge-success badge-pill"></span>
+                      <span id="paper-warning-badge" class="badge badge-danger badge-pill"></span>
                       <blockquote class="blockquote blockquote-flush">
                         <p class="h4">Paper Submission</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>MAIN CONFERENCE</footer>
+                      </blockquote>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-hover">
+                      <b>15 June 2018</b> 
+                      <span id="review-date-badge" class="badge badge-info badge-pill"></span>
+                      <span id="review-warning-badge" class="badge badge-danger badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Review Notification</p>
                         <div class="tool-tip badge badge-pill" style="float: right;">
                           <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
                           <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
