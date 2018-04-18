@@ -58,257 +58,268 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.11';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.11';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 
-	<!-- Navigation -->
-	<!-- Navigation -->
-	<nav class="fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand" style="padding: 0px;" href="index.html"><img src="images/vlhcclogo.png" style="width: 170px;"></a>
+  <!-- Navigation -->
+  <nav class="fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container" style="max-width: 1040px;">
+      <a class="navbar-brand" style="padding: 0px;" href="index.html"><img src="images/vlhcclogo.png" style="width: 170px;"></a>
+        <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="toggle-bar"><span></span></div>
+        <div class="ht-menu ht-clearfix navbar-collapse" style="display: none;" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" style=" text-align: center;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                VL/HCC'18
+              </a>
+              <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="keynotes.html">Keynotes</a>
+                <a class="dropdown-item" href="sponsors.html">Sponsors</a>
+                <!--<a class="dropdown-item" href="promote.html">Promote VL/HCC</a>
+                -->              </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Attending
+                </a>
+                <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                  <a class="dropdown-item" href="important_dates.html">Important Dates</a>
+                  <!-- <a class="dropdown-item" href="registration.html">Registration</a> -->
+                  <a class="dropdown-item" href="venue.html">Venue</a>
+                  <a class="dropdown-item" href="hotels.html">Hotels</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Calls
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                  <a class="dropdown-item" href="call_papers.html">Call for Papers</a>
+                  <a class="dropdown-item" href="call_workshops.html">Call for Workshops</a>
+                  <a class="dropdown-item" href="call_sponsors.html">Call for Sponsors</a>
+                <!-- <a class="dropdown-item" href="call_showpieces.html">Call For Showpieces</a>
+                <a class="dropdown-item" href="call_workshops.html">Call For Workshops</a>
+                <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a> -->
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="program_overview.html">
+                Program
+              </a>
+            </li>
 
-			<div class="toggle-bar"><span></span></div>
-			<div class="ht-menu ht-clearfix navbar-collapse" style="display: none;" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto" style="display: block; text-align: center;">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							VL/HCC'18
-						</a>
-						<div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="keynotes.html">Keynotes</a>
-							<a class="dropdown-item" href="sponsors.html">Sponsors</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Attending
-						</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="important_dates.html">Important Dates</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Workshops
+              </a>
+              <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" target=_blank href="http://sems2018.ist.tugraz.at">SEMS'18</a>
+                <a class="dropdown-item" target=_blank href="#">DTSHPS'18</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organizers</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="organizers.html">Organizing Committee</a>
+                <a class="dropdown-item" href="program_committee.html">Program Committee</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" target=_blank href="http://conferences.computer.org/VLHCC/">
+                Series Charter
+              </a>
+            </li>
+            <li class="nav-item dropdown" >
+              <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="pastvlhccs.html">
+                Past VL/HCCs
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-							<a class="dropdown-item" href="venue.html">Venue</a>
-							<a class="dropdown-item" href="hotels.html">Hotels</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Calls
-						</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="call_papers.html">Call for Papers</a>
-							<a class="dropdown-item" href="call_workshops.html">Call for Workshops</a>
-							<a class="dropdown-item" href="call_sponsors.html">Call for Sponsors</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="program_overview.html">Program
-						</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="program_overview.html">Program at a Glance</a>
-							<!-- <a class="dropdown-item" href="program.html">Detailed Program</a> -->
-							<!-- <a class="dropdown-item" href="awards.html">Awards</a> -->
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organizers</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog"><a class="dropdown-item" href="organizers.html">Organizing Committee</a>
-							<a class="dropdown-item" href="program_committee.html">Program Committee</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" target=_blank href="http://conferences.computer.org/VLHCC/">
-							Series Charter
-						</a>
-					</li>
-					<li class="nav-item dropdown" >
-						<a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="pastvlhccs.html">
-							Past VL/HCCs
-						</a>
+<section class="section workshops">
+	<!-- Page Content -->
+	<div class="container-fluid section-heading">
 
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-9">
+
+				<!-- Page Heading/Breadcrumbs -->
+				<h1 class="mt-4 mb-3">Call For Workshops
+					<small></small>
+				</h1>
+
+				<ol class="breadcrumb">
+					<li class="">
 					</li>
-				</ul>
+				</ol>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<h4>Important Dates</h4>
+						<table class="table table-striped table-responsive">
+							<thead></thead>
+							<tbody>
+								<tr>
+									<th scope="row"><s>Workshop Proposal</s></th>
+									<td><s>23 March 2018</s></td>
+								</tr>
+								<tr>
+									<th scope="row">Notification</th>
+									<td>6 April 2018</td>
+								</tr>
+								<tr>
+									<th scope="row">Workshop Date</th>
+									<td>1 October 2018</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<h3>VL/HCC 2018 WORKSHOPS</h3>
+
+				<div class="row">
+					<div class="col-sm-12">
+						VL/HCC 2018 will host a number of workshops during the first day of the conference. The workshops will provide an interactive forum for a group of typically 15 to 30 participants to exchange recent and/or preliminary results as well as to conduct intensive discussions on a particular topic. Organizers and participants are encouraged to foster lively discussion of innovative ideas, recent progress, or practical experience. 
+						Each workshop should provide a balanced distribution of its time for both presentation of papers and discussions. We encourage prospective workshop organizers to submit proposals for highly interactive workshops focusing on areas related to modelling in general. Both research-oriented and applied topics are welcome. The duration of each workshop is either half a day or a full day. 
+					</div>
+				</div>
+				<h3>WORKSHOP PROPOSAL SUBMISSION, SELECTION, AND GUIDELINES</h3>
+
+				<div class="spacer"></div>
+				Prospective workshop organizers must submit a workshop proposal package which will be reviewed by the workshop selection committee, and may either be accepted or rejected. If the workshop is accepted, both the conference organizers and the workshop organizers will publicize the workshop to encourage attendees to submit papers to the workshop and attend it.
+
+				Your proposal must contain the following information:
+
+				<div class="row">
+					<div class="col-md-12">
+						<h4>General Information:</h4>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop title and name or acronym</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Organizers (name, affiliation, e-mail) and primary contact</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Desired length of the workshop (half day or full day)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Abstract (200 words), intended for the VL/HCC 2018 website</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">URL of preliminary workshop website (if one exists already)</li>
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Objectives and Scope:</h4>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Description of the workshop including motivation and objectives, topics of interest, and intended audience</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Brief explanation of the workshop’s relevance to the VL/HCC 2018 conference and the VL/HCC community in general (if your workshop continues a series, please explain why it should be run again at VL/HCC 2018)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Previous events including, where applicable, a link to the website, the number of submitted and accepted papers, and the number of attendees</li>
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Organization Details:</h4>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Details on the organizers’ backgrounds (max. 150 words per person), including relevant past experience in workshop organization</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop program committee (indicated as finalized or expected)</li>
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Workshop Format:</h4>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Intended paper format (number of pages; types of papers, e.g., full papers, work-in-progress papers, practitioners' reports, position statements, posters)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Evaluation and selection process of submissions</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Proceedings planned (publisher, pre- and/or post-proceedings, preliminary proceedings or paper dissemination; please indicate whether you would be willing to participate in joint workshop proceedings for all VL/HCC 2018 workshops or prefer your individual proceedings publishing process)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Intended workshop format (including duration, approximate schedule, number of presentations, planned keynotes, interactive or working sessions)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Intended activities for soliciting submissions</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Expected number of participants</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Specific requirements (e.g., equipment, room capacity)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Brief description of any post-workshop activities (if any)</li>
+
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Additional Material:</h4>
+
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop web page (URL of the draft web page, if one exists)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Draft Call for Papers for the workshop (a one page Call for Papers that you intend to send out if your workshop is accepted)</li>
+					</div>
+				</div>
+				<div class="spacer"></div>
+
+				<div class="row">
+					<div class="col-md-12">
+						In order to ensure a proper coordination of the workshop paper submission deadlines with those of the main conference, the following constraints have to be respected by the deadlines you plan for your workshop: 
+
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop website and CFP dissemination: May 11, 2018</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop paper submission deadline: July 13, 2018</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop paper notification to authors: August 10, 2018 (must be before the VL/HCC 2018 early registration deadline)</li>
+						<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop date: October 1, 2018</li>
+
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Submission:</h4>
+
+						<p>Please ensure that you adhere to the above workshop proposal
+							guidelines providing all requested information using at most five (5)
+							pages. In addition, please provide a one page draft of your planned
+							Call for Papers to the proposal (not included in the page limit of 5).
+						</p>
+
+						<p>Please submit your workshop proposal electronically in PDF by emailing
+							the workshops chairs: João Saraiva (<a href="mailto:saraiva@di.uminho.pt">saraiva@di.uminho.pt</a>) and	Stefan Sauer (<a href="mailto:sauer@uni-paderborn.de">sauer@uni-paderborn.de</a>)
+						</p>
+					</div>
+				</div>
+
+				<div class="share">
+					<div class="spacer"></div>
+					<div class="fb-share-button" data-href="https://vlhcc18.github.io/call_workshops.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+						<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvlhcc18.github.io%2Fcall_workshops.html&amp;src=sdkpreparse">
+							Share
+						</a>
+					</div>
+
+					<a class="twitter-share-button"
+					href="https://twitter.com/intent/tweet?text=Submit%20your%20workshop%20proposal%20for%20VL/HCC%202018!%20@vlhcc"
+					data-url="https://vlhcc18.github.io/call_workshops.html"
+					data-hashtags="vlhcc,vlhcc2018"
+					data-size="large">
+					Tweet
+				</a>
 			</div>
 		</div>
-	</nav>
-
-	<section class="section workshops">
-		<!-- Page Content -->
-		<div class="container-fluid section-heading">
-
-			<div class="row">
-				<div class="col-sm-1"></div>
-				<div class="col-sm-9">
-
-					<!-- Page Heading/Breadcrumbs -->
-					<h1 class="mt-4 mb-3">Call For Workshops
-						<small></small>
-					</h1>
-
-					<ol class="breadcrumb">
-						<li class="">
-						</li>
-					</ol>
-
-					<div class="row">
-						<div class="col-sm-6">
-							<h4>Important Dates</h4>
-							<table class="table table-striped table-responsive">
-								<thead></thead>
-								<tbody>
-									<tr>
-										<th scope="row"><s>Workshop Proposal</s></th>
-										<td><s>23 March 2018</s></td>
-									</tr>
-									<tr>
-										<th scope="row">Notification</th>
-										<td>6 April 2018</td>
-									</tr>
-									<tr>
-										<th scope="row">Workshop Date</th>
-										<td>1 October 2018</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-
-					<h3>VL/HCC 2018 WORKSHOPS</h3>
-
-					<div class="row">
-						<div class="col-sm-12">
-							VL/HCC 2018 will host a number of workshops during the first day of the conference. The workshops will provide an interactive forum for a group of typically 15 to 30 participants to exchange recent and/or preliminary results as well as to conduct intensive discussions on a particular topic. Organizers and participants are encouraged to foster lively discussion of innovative ideas, recent progress, or practical experience. 
-							Each workshop should provide a balanced distribution of its time for both presentation of papers and discussions. We encourage prospective workshop organizers to submit proposals for highly interactive workshops focusing on areas related to modelling in general. Both research-oriented and applied topics are welcome. The duration of each workshop is either half a day or a full day. 
-						</div>
-					</div>
-					<h3>WORKSHOP PROPOSAL SUBMISSION, SELECTION, AND GUIDELINES</h3>
-
-					<div class="spacer"></div>
-					Prospective workshop organizers must submit a workshop proposal package which will be reviewed by the workshop selection committee, and may either be accepted or rejected. If the workshop is accepted, both the conference organizers and the workshop organizers will publicize the workshop to encourage attendees to submit papers to the workshop and attend it.
-
-					Your proposal must contain the following information:
-
-					<div class="row">
-						<div class="col-md-12">
-							<h4>General Information:</h4>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop title and name or acronym</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Organizers (name, affiliation, e-mail) and primary contact</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Desired length of the workshop (half day or full day)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Abstract (200 words), intended for the VL/HCC 2018 website</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">URL of preliminary workshop website (if one exists already)</li>
-						</div>
-					</div>
-
-					<div class="spacer"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h4>Objectives and Scope:</h4>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Description of the workshop including motivation and objectives, topics of interest, and intended audience</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Brief explanation of the workshop’s relevance to the VL/HCC 2018 conference and the VL/HCC community in general (if your workshop continues a series, please explain why it should be run again at VL/HCC 2018)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Previous events including, where applicable, a link to the website, the number of submitted and accepted papers, and the number of attendees</li>
-						</div>
-					</div>
-
-					<div class="spacer"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h4>Organization Details:</h4>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Details on the organizers’ backgrounds (max. 150 words per person), including relevant past experience in workshop organization</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop program committee (indicated as finalized or expected)</li>
-						</div>
-					</div>
-
-					<div class="spacer"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h4>Workshop Format:</h4>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Intended paper format (number of pages; types of papers, e.g., full papers, work-in-progress papers, practitioners' reports, position statements, posters)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Evaluation and selection process of submissions</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Proceedings planned (publisher, pre- and/or post-proceedings, preliminary proceedings or paper dissemination; please indicate whether you would be willing to participate in joint workshop proceedings for all VL/HCC 2018 workshops or prefer your individual proceedings publishing process)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Intended workshop format (including duration, approximate schedule, number of presentations, planned keynotes, interactive or working sessions)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Intended activities for soliciting submissions</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Expected number of participants</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Specific requirements (e.g., equipment, room capacity)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Brief description of any post-workshop activities (if any)</li>
-
-						</div>
-					</div>
-
-					<div class="spacer"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h4>Additional Material:</h4>
-
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop web page (URL of the draft web page, if one exists)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Draft Call for Papers for the workshop (a one page Call for Papers that you intend to send out if your workshop is accepted)</li>
-						</div>
-					</div>
-					<div class="spacer"></div>
-
-					<div class="row">
-						<div class="col-md-12">
-							In order to ensure a proper coordination of the workshop paper submission deadlines with those of the main conference, the following constraints have to be respected by the deadlines you plan for your workshop: 
-
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop website and CFP dissemination: May 11, 2018</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop paper submission deadline: July 13, 2018</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop paper notification to authors: August 10, 2018 (must be before the VL/HCC 2018 early registration deadline)</li>
-							<li class="list-group-item" style="border: none; display: list-item; padding: 0.75rem 1.25rem;">Workshop date: October 1, 2018</li>
-
-						</div>
-					</div>
-
-					<div class="spacer"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h4>Submission:</h4>
-
-							<p>Please ensure that you adhere to the above workshop proposal
-								guidelines providing all requested information using at most five (5)
-								pages. In addition, please provide a one page draft of your planned
-                               Call for Papers to the proposal (not included in the page limit of 5).
-                           </p>
-
-                           <p>Please submit your workshop proposal electronically in PDF by emailing
-                            the workshops chairs: João Saraiva (<a href="mailto:saraiva@di.uminho.pt">saraiva@di.uminho.pt</a>) and	Stefan Sauer (<a href="mailto:sauer@uni-paderborn.de">sauer@uni-paderborn.de</a>)
-                        </p>
-                    </div>
-                </div>
-
-                <div class="share">
-                  <div class="spacer"></div>
-                  <div class="fb-share-button" data-href="https://vlhcc18.github.io/call_workshops.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
-                   <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvlhcc18.github.io%2Fcall_workshops.html&amp;src=sdkpreparse">
-                    Share
-                </a>
-            </div>
-
-            <a class="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=Submit%20your%20workshop%20proposal%20for%20VL/HCC%202018!%20@vlhcc"
-            data-url="https://vlhcc18.github.io/call_workshops.html"
-            data-hashtags="vlhcc,vlhcc2018"
-            data-size="large">
-            Tweet
-        </a>
-    </div>
-</div>
-<div id="twitter-feed" class="col-sm-3">
-    <div id="twitter-ref">
-     <div class="spacer"></div>
-     <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
- </div>
- <div id="twitter-timeline-frame">
-     <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
-     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
- </div>
-</div>
-</div>
+		<div id="twitter-feed" class="col-sm-3">
+			<div id="twitter-ref">
+				<div class="spacer"></div>
+				<i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
+			</div>
+			<div id="twitter-timeline-frame">
+				<a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+	</div>
 </div>
 
 </section>
