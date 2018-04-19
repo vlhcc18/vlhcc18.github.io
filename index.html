@@ -95,12 +95,12 @@
       var today = new Date();
 
       // Main Conference Dates
-      var dateAbstract = new Date("04/20/2018");
-      var datePaper = new Date("04/27/2018");
-      var dateReview = new Date("06/14/2018");
-      var dateRebuttal = new Date("06/22/2018");
-      var dateNotification = new Date("07/06/2018");
-      var dateCameraReady = new Date("07/27/2018");
+      var dateAbstract = new Date(Date.UTC(2018,3,21, 11,59,59));
+      var datePaper = new Date(Date.UTC(2018,3,27, 11,59,59));
+      var dateReview = new Date(Date.UTC(2018,05,14, 11,59,59));
+      var dateRebuttal = new Date(Date.UTC(2018,05,22, 11,59,59));
+      var dateNotification = new Date(Date.UTC(2018,06,06, 11,59,59));
+      var dateCameraReady = new Date(Date.UTC(2018,06,27, 11,59,59));
 
       var diffAbstract = Math.ceil((Math.abs(dateAbstract.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
       var diffPaper = Math.ceil((Math.abs(datePaper.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
@@ -110,8 +110,8 @@
       var diffCameraReady = Math.ceil((Math.abs(dateCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
 
       // Workshop Dates
-      // var dateWorkshopProposal = new Date("03/23/2018");
-      var dateWorkshopNotification = new Date("04/06/2018");
+      // var dateWorkshopProposal = new Date("03/23/2018 23:59:59");
+      var dateWorkshopNotification = new Date("04/06/2018 23:59:59");
 
       // var diffWorkshopProposal = Math.ceil((Math.abs(dateWorkshopProposal.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
       var diffWorkshopNotification = Math.ceil((Math.abs(dateWorkshopNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
@@ -223,8 +223,9 @@
                 Workshops
               </a>
               <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="workshops.html">Overview</a>
                 <a class="dropdown-item" target=_blank href="http://sems2018.ist.tugraz.at">SEMS'18</a>
-                <a class="dropdown-item" target=_blank href="#">DTSHPS'18</a>
+                <a class="dropdown-item" href="#!">DTSHPS'18</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -631,9 +632,9 @@
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
-  <div class="container">
+  <div class="container" style="max-width: 1040px;">
     <div class="row">
-      <div class="col-md-4 col-sm-3 text-white">
+      <div class="col-md-2 col-sm-2 text-white">
         <h4 style="font-weight: bold;">VL/HCC 18</h4>
         <div class="row">
           <div class="col-sm-2">
@@ -647,7 +648,7 @@
         </div>
 
       </div>
-      <div class="col-md-2 col-sm-3 text-white">
+      <div class="col-md-2 col-sm-2 text-white">
         <h4>Attending</h4>
         <a href="important_dates.html" class="text-white">Important Dates</a>
         <!-- <a href="registration.html" class="text-white">Registration</a> -->
@@ -656,16 +657,21 @@
         <a href="venue.html" class="text-white">Venue</a><br/>
         <a href="hotels.html" class="text-white">Hotels</a>
       </div>
-      <div class="col-md-2 col-sm-3 text-white">
+      <div class="col-md-2 col-sm-2 text-white">
         <h4>Calls</h4>
         <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
         <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
         <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
       </div>
-      <div class="col-md-2 col-sm-3 text-white">
+      <div class="col-md-2 col-sm-2 text-white">
         <a href="program_overview.html" class="text-white"> <h4>Program</h4> </a>
       </div>
-      <div class="col-md-2 col-sm-3 text-white">
+      <div class="col-md-2 col-sm-2 text-white">
+        <a href="workshops.html" class="text-white"> <h4>Workshops</h4> </a>
+        <a href="http://sems2018.ist.tugraz.at/" target=_blank class="text-white">SEMS'18</a><br/>
+        <a href="#!" class="text-white">DTSHPS'18</a>
+      </div>
+      <div class="col-md-2 col-sm-2 text-white">
         <h4>Committees</h4>
         <a href="organizers.html" class="text-white">Org. Committee</a><br/>
         <a href="program_committee.html" class="text-white">Prog. Committee</a>
