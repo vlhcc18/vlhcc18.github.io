@@ -121,7 +121,6 @@
       if (diffWorkshopProposal === "1 days left") {
         $("#ws-proposal-warning-badge").text("Today!");
       }
-      */
 
       $("#ws-notification-date-badge").text(diffWorkshopNotification);
       if (diffWorkshopNotification === "1 days left") {
@@ -137,24 +136,28 @@
       if (diffPaper === "1 days left") {
         $("#paper-warning-badge").text("Today!");
       }
+      */
 
       $("#review-date-badge").text(diffReview);
       if (diffReview === "1 days left") {
         $("#review-warning-badge").text("Today!");
       }
 
-      $("#rebuttal-date-badge").text(diffReview);
-      if (diffReview === "1 days left") {
+      $("#rebuttal-date-badge").text(diffRebuttal);
+      if (diffRebuttal === "1 days left") {
         $("#rebuttal-warning-badge").text("Today!");
       }
 
       $("#notification-date-badge").text(diffNotification);
-      if (diffReview === "1 days left") {
+      if (diffNotification === "1 days left") {
         $("#notification-warning-badge").text("Today!");
       }
 
-    	//$("#").text(diffPaper);
-    	//$("#camera-ready-date-badge").text(diffCameraReady);
+      $("#camera-ready-date-badge").text(diffCameraReady);
+      if (diffCameraReady === "1 days left") {
+        $("#camera-warning-badge").text("Today!");
+      }
+
     });
   	
   </script>
@@ -425,20 +428,6 @@
                 <div id="twitter-timeline-frame">
                   <div class="list-group list-group-flush" style="margin-bottom: 0px;">
                     <a href="#" class="list-group-item list-group-item-hover">
-                      <b>27 April 2018</b> 
-                      <span id="paper-date-badge" class="badge badge-info badge-pill"></span>
-                      <span class="badge badge-success badge-pill">NEW</span>
-                      <span id="paper-warning-badge" class="badge badge-danger badge-pill"></span>
-                      <blockquote class="blockquote blockquote-flush">
-                        <p class="h4">Paper Submission</p>
-                        <div class="tool-tip badge badge-pill" style="float: right;">
-                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
-                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
-                        </div>
-                        <footer>MAIN CONFERENCE</footer>
-                      </blockquote>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-hover">
                       <b>15 June 2018</b> 
                       <span id="review-date-badge" class="badge badge-info badge-pill"></span>
                       <span id="review-warning-badge" class="badge badge-danger badge-pill"></span>
@@ -476,7 +465,21 @@
                         </div>
                         <footer>MAIN CONFERENCE</footer>
                       </blockquote>
-                    </a> 
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-hover">
+                      <b>27 July 2018</b> 
+                      <span id="camera-ready-badge" class="badge badge-info badge-pill"></span>
+                      <span class="badge badge-success badge-pill">NEW</span>
+                      <span id="camera-warning-badge" class="badge badge-danger badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Camera Ready Copy</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>MAIN CONFERENCE</footer>
+                      </blockquote>
+                    </a>
               </div>
               
             </div>
