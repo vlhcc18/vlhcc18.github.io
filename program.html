@@ -184,16 +184,13 @@
               </li>
             </ol>
 
-            <h3>The detailed program of the conference will be presented after the conference results.</h3>
-            <!--
             <div class="row">
               <div class="col-sm-2"></div>
               <div class="text-center col-sm-8">
-                <button class="btn btn-primary" onclick="openTab('Monday')">Monday</button>
-                <button class="btn btn-primary" onclick="openTab('Tuesday')">Tuesday</button>
-                <button class="btn btn-primary" onclick="openTab('Wednesday')">Wednesday</button>
-                <button class="btn btn-primary" onclick="openTab('Thursday')">Thursday</button>
-                <button class="btn btn-primary" onclick="openTab('Friday')">Friday</button>
+                <button class="btn btn-warning" onclick="openTab('Monday')">Monday</button>
+                <button class="btn btn-info" onclick="openTab('Tuesday')">Tuesday</button>
+                <button class="btn btn-info" onclick="openTab('Wednesday')">Wednesday</button>
+                <button class="btn btn-info" onclick="openTab('Thursday')">Thursday</button>
               </div>
               <div class="col-sm-2"></div>
             </div>
@@ -201,61 +198,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div id="Monday" class="tab">
-                  <table class="table table-striped table-hover table-responsive">
-                    <thead class="thead-default">
-                      <tr>
-                        <th class="col-sm-2">Hour</th>
-                        <th class="col-sm-8">Event</th>
-                        <th class="col-sm-2">Room</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">-</th>
-                        <td>Registration</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">9:00 - 10:30</th>
-                        <td>Event 1</td>
-                        <td>Room 1</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">10:30 - 11:00</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">11:00 - 12:30</th>
-                        <td>Event 3</td>
-                        <td>Room 3</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">12:30 - 14:00</th>
-                        <td class="event-break">LUNCH</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">14:00 - 16:00</th>
-                        <td>Event 5</td>
-                        <td>Room 5</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:00 - 16:30</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:30 - 18:30</th>
-                        <td>Event 7</td>
-                        <td>Room 7</td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-                </div>
-
-                <div id="Tuesday" class="tab" style="display: none;">
+                  <h4 class="text-center"><b>October 1 (Workshop)</b></h4>
                   <table class="table table-striped table-hover table-responsive">
                     <thead class="thead-default">
                       <tr>
@@ -267,212 +210,286 @@
                     <tbody>
                       <tr>
                         <th scope="row">-</th>
-                        <td>Registration</td>
-                        <td>-</td>                      
+                        <td class="event-hooked">Registration</td>
+                        <td class="event-hooked">(n.a.)</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">9:00 - 11:00</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">9:00 - 10:30</th>
-                        <td>Event 1</td>
-                        <td>Room 1</td>                      
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">11:00 - 12:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">10:30 - 11:00</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>                      
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th rowspan="2" scope="row">12:30 - 14:00</th>
+                        <td rowspan="2" class="event-break-ws">LUNCH</td>
+                        <td rowspan="2" class="event-break-ws"> </td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">14:00 - 16:00</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">11:00 - 12:30</th>
-                        <td>Event 3</td>
-                        <td>Room 3</td>                      
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">16:30 - 18:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">12:30 - 14:00</th>
-                        <td class="event-break">LUNCH</td>
-                        <td>-</td>                      
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div id="Tuesday" class="tab" style="display: none;">
+                  <h4 class="text-center"><b>October 2 (Main Conference)</b></h4>
+                  <table class="table table-striped table-hover table-responsive">
+                    <thead class="thead-default">
+                      <tr>
+                        <th class="col-sm-2">Hour</th>
+                        <th class="col-sm-8">Event</th>
+                        <th class="col-sm-2">Room</th>                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">-</th>
+                        <td class="event-hooked">Registration</td>
+                        <td class="event-hooked">(n.a.)</td>
                       </tr>
                       <tr>
-                        <th scope="row">14:00 - 16:00</th>
-                        <td>Event 5</td>
-                        <td>Room 5</td>                      
+                        <th rowspan="2" scope="row" rowspan="2">9:00 - 9:15</th>
+                        <td rowspan="2" class="event-title">Opening Session</td>
+                        <td rowspan="2">(n.a.)</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">9:15 - 10:15</th>
+                        <td class="event-title">Keynote: <a href="keynotes.html#keynote-jason">Helping Developers with Privacy</td>
+                        <td>(n.a.)</td>
                       </tr>
                       <tr>
-                        <th scope="row">16:00 - 16:30</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>                      
+                        <td>
+                          <p><i>Jason Hong</i></p>
+                          <p><small>Timing: 50+10 min</small></p>
+                        </td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">10:15 - 12:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">16:30 - 18:30</th>
-                        <td>Event 7</td>
-                        <td>Room 7</td>                      
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th rowspan="2" scope="row">12:30 - 14:00</th>
+                        <td rowspan="2" class="event-break">LUNCH</td>
+                        <td rowspan="2" class="event-break">(n.a.)</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">14:00 - 16:00</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
+                      </tr>
+                      <tr>
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">16:00 - 18:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
+                      </tr>
+                      <tr>
+                        <td class="event-empty">.</td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
 
                 <div id="Wednesday" class="tab" style="display: none;">
+                  <h4 class="text-center"><b>October 3 (Main Conference)</b></h4>
                   <table class="table table-striped table-hover table-responsive">
                     <thead class="thead-default">
                       <tr>
                         <th class="col-sm-2">Hour</th>
                         <th class="col-sm-8">Event</th>
-                        <th class="col-sm-2">Room</th>
+                        <th class="col-sm-2">Room</th>                      
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">-</th>
-                        <td>Registration</td>
-                        <td>-</td>
+                        <td class="event-hooked">Registration</td>
+                        <td class="event-hooked">(n.a.)</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">9:00 - 10:00</th>
+                        <td class="event-title">Keynote: <a href="keynotes.html#keynote-geraldine">Mind the gap: modelling the human in human-centric computing</td>
+                        <td>(n.a.)</td>
                       </tr>
                       <tr>
-                        <th scope="row">9:00 - 10:30</th>
-                        <td>Event 1</td>
-                        <td>Room 1</td>
+                        <td>
+                          <p><i>Geraldine Fitzpatrick</i></p>
+                          <p><small>Timing: 50+10 min</small></p>
+                        </td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">10:00 - 12:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">10:30 - 11:00</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th rowspan="2" scope="row">12:30 - 14:00</th>
+                        <td rowspan="2" class="event-break">LUNCH</td>
+                        <td rowspan="2" class="event-break">(n.a.)</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">14:00 - 16:00</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">11:00 - 12:30</th>
-                        <td>Event 3</td>
-                        <td>Room 3</td>
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">16:00 - 18:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">12:30 - 14:00</th>
-                        <td class="event-break">LUNCH</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">14:00 - 16:00</th>
-                        <td>Event 5</td>
-                        <td>Room 5</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:00 - 16:30</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:30 - 18:30</th>
-                        <td>Event 7</td>
-                        <td>Room 7</td>
+                        <td class="event-empty">.</td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 
                 <div id="Thursday" class="tab" style="display: none;">
+                  <h4 class="text-center"><b>October 4 (Main Conference)</b></h4>
                   <table class="table table-striped table-hover table-responsive">
                     <thead class="thead-default">
                       <tr>
                         <th class="col-sm-2">Hour</th>
                         <th class="col-sm-8">Event</th>
-                        <th class="col-sm-2">Room</th>
+                        <th class="col-sm-2">Room</th>                      
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">-</th>
-                        <td>Registration</td>
-                        <td>-</td>
+                        <td class="event-hooked">Registration</td>
+                        <td class="event-hooked">(n.a.)</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">9:00 - 10:00</th>
+                        <td class="event-title">Keynote: <a href="keynotes.html#keynote-rodrigo">Bringing visual languages to market: The OutSystems story</td>
+                        <td>(n.a.)</td>
                       </tr>
                       <tr>
-                        <th scope="row">9:00 - 10:30</th>
-                        <td>Event 1</td>
-                        <td>Room 1</td>
+                        <td>
+                          <p><i>Rodrigo Sousa Coutinho</i></p>
+                          <p><small>Timing: 50+10 min</small></p>
+                        </td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">10:00 - 12:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">10:30 - 11:00</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th rowspan="2" scope="row">12:30 - 14:00</th>
+                        <td rowspan="2" class="event-break">LUNCH</td>
+                        <td rowspan="2" class="event-break">(n.a.)</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">14:00 - 16:00</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">11:00 - 12:30</th>
-                        <td>Event 3</td>
-                        <td>Room 3</td>
+                        <td class="event-empty">.</td>
+                        <td></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">16:00 - 18:30</th>
+                        <td class="event-empty">(empty)</td>
+                        <td class="event-empty"> </td>
                       </tr>
                       <tr>
-                        <th scope="row">12:30 - 14:00</th>
-                        <td class="event-break">LUNCH</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">14:00 - 16:00</th>
-                        <td>Event 5</td>
-                        <td>Room 5</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:00 - 16:30</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:30 - 18:30</th>
-                        <td>Event 7</td>
-                        <td>Room 7</td>
+                        <td class="event-empty">.</td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 
-                <div id="Friday" class="tab" style="display: none;">
-                  <table class="table table-striped table-hover table-responsive">
-                    <thead class="thead-default">
-                      <tr>
-                        <th class="col-sm-2">Hour</th>
-                        <th class="col-sm-8">Event</th>
-                        <th class="col-sm-2">Room</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">-</th>
-                        <td>Registration</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">9:00 - 10:30</th>
-                        <td>Event 1</td>
-                        <td>Room 1</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">10:30 - 11:00</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">11:00 - 12:30</th>
-                        <td>Event 3</td>
-                        <td>Room 3</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">12:30 - 14:00</th>
-                        <td class="event-break">LUNCH</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">14:00 - 16:00</th>
-                        <td>Event 5</td>
-                        <td>Room 5</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:00 - 16:30</th>
-                        <td class="event-break">Coffee Break</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">16:30 - 18:30</th>
-                        <td>Event 7</td>
-                        <td>Room 7</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
-          -->
+
+            <div class="row">
+              <div class="col-xs-2">
+                <span class="bg-warning">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;: Workshop<br/>
+                <span class="bg-info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;: Main Conference<br/>
+              </div>
+            </div>
+          
         </div>
         <div id="twitter-feed" class="col-sm-3">
           <div id="twitter-ref">

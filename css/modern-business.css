@@ -24,30 +24,58 @@ body {
 
 
 .carousel-item {
-    height: 65vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .portfolio-item {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .text-center-block{
-    text-align: center;
+  text-align: center;
+}
+
+.event-title {
+  font-weight: bold;
+}
+
+.event-hooked {
+  font-style: italic;
+}
+
+.event-empty {
+  font-style: italic;
+  opacity: 0.6;
 }
 
 .event-break {
-    color: white;
-    background-color: #524c67;
+  color: #fff;
+  font-weight: bold;
+  background-color: #5bc0de;
+  border-color: #5bc0de;
 }
 
 .event-break:hover {
-    background-color: #3b364a;
+  background-color: #31b0d5;
+  border-color: #2aabd2;
+}
+
+.event-break-ws {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.event-break-ws:hover {
+  background-color: #ec971f;
+  border-color: #eb9316;
 }
 
 .h-strong {
