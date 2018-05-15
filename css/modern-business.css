@@ -41,6 +41,22 @@ body {
   text-align: center;
 }
 
+.event-category {
+  background-color: #bee5eb;
+}
+
+.event-category:hover {
+  background-color: #abdde5;
+}
+
+.event-category-ws {
+  background-color: #ffeeba;
+}
+
+.event-category-ws:hover {
+  background-color: #ffe8a1;
+}
+
 .event-title {
   font-weight: bold;
 }
@@ -76,6 +92,18 @@ body {
 .event-break-ws:hover {
   background-color: #ec971f;
   border-color: #eb9316;
+}
+
+.event-social {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.event-social:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #c12e2a;
 }
 
 .h-strong {
