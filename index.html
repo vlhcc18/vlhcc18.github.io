@@ -97,10 +97,10 @@
       // Main Conference Dates
       var dateAbstract = new Date(Date.UTC(2018,3,21, 11,59,59));
       var datePaper = new Date(Date.UTC(2018,3,27, 11,59,59));
-      var dateReview = new Date(Date.UTC(2018,05,14, 11,59,59));
-      var dateRebuttal = new Date(Date.UTC(2018,05,22, 11,59,59));
-      var dateNotification = new Date(Date.UTC(2018,06,06, 11,59,59));
-      var dateCameraReady = new Date(Date.UTC(2018,06,27, 11,59,59));
+      var dateReview = new Date(Date.UTC(2018,5,14, 11,59,59));
+      var dateRebuttal = new Date(Date.UTC(2018,5,22, 11,59,59));
+      var dateNotification = new Date(Date.UTC(2018,6,6, 11,59,59));
+      var dateCameraReady = new Date(Date.UTC(2018,6,27, 11,59,59));
 
       var diffAbstract = Math.ceil((Math.abs(dateAbstract.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
       var diffPaper = Math.ceil((Math.abs(datePaper.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
@@ -111,37 +111,30 @@
 
       // Workshop Dates
       // var dateWorkshopProposal = new Date("03/23/2018 23:59:59");
-      var dateWorkshopNotification = new Date("04/06/2018 23:59:59");
+      // var dateWorkshopNotification = new Date("04/06/2018 23:59:59");
 
       // var diffWorkshopProposal = Math.ceil((Math.abs(dateWorkshopProposal.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
-      var diffWorkshopNotification = Math.ceil((Math.abs(dateWorkshopNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      // var diffWorkshopNotification = Math.ceil((Math.abs(dateWorkshopNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
 
-      /*
-      $("#ws-proposal-date-badge").text(diffWorkshopProposal);
-      if (diffWorkshopProposal === "1 days left") {
-        $("#ws-proposal-warning-badge").text("Today!");
-      }
+      // Showpieces Dates
+      var dateShowpieceSubmission = new Date(Date.UTC(2018,6,13, 11,59,59))
+      var dateShowpieceNotification = new Date(Date.UTC(2018,6,27, 11,59,59))
+      var dateShowpieceCameraReady = new Date(Date.UTC(2018,7,10, 11,59,59))
 
-      $("#ws-notification-date-badge").text(diffWorkshopNotification);
-      if (diffWorkshopNotification === "1 days left") {
-        $("#ws-notification-warning-badge").text("Today!");
-      }
+      var diffShowpieceSubmission = Math.ceil((Math.abs(dateShowpieceSubmission.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffShowpieceNotification = Math.ceil((Math.abs(dateShowpieceNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffShowpieceCameraReady = Math.ceil((Math.abs(dateShowpieceCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
 
-      $("#abstract-date-badge").text(diffAbstract);
-      if (diffAbstract === "1 days left") {
-        $("#abstract-warning-badge").text("Today!");
-      }
 
-      $("#paper-date-badge").text(diffPaper);
-      if (diffPaper === "1 days left") {
-        $("#paper-warning-badge").text("Today!");
-      }
+      // Graduate Consortium Dates
+      var dateConsortiumSubmission = new Date(Date.UTC(2018,6,27, 11,59,59))
+      var dateConsortiumNotification = new Date(Date.UTC(2018,7,6, 11,59,59))
+      var dateConsortiumCameraReady = new Date(Date.UTC(2018,7,10, 11,59,59))
 
-      $("#review-date-badge").text(diffReview);
-      if (diffReview === "1 days left") {
-        $("#review-warning-badge").text("Today!");
-      }
-      */
+      var diffConsortiumSubmission = Math.ceil((Math.abs(dateConsortiumSubmission.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffConsortiumNotification = Math.ceil((Math.abs(dateConsortiumNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffConsortiumCameraReady = Math.ceil((Math.abs(dateConsortiumCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      
 
       $("#rebuttal-date-badge").text(diffRebuttal);
       if (diffRebuttal === "1 days left") {
@@ -156,6 +149,11 @@
       $("#camera-ready-date-badge").text(diffCameraReady);
       if (diffCameraReady === "1 days left") {
         $("#camera-ready-warning-badge").text("Today!");
+      }
+
+      $("#sp-submission-date-badge").text(diffShowpieceSubmission);
+      if (diffShowpieceSubmission === "1 days left") {
+        $("#sp-submission-warning-badge").text("Today!");
       }
 
     });
@@ -222,9 +220,8 @@
                 <a class="dropdown-item" href="call_papers.html">Call for Papers</a>
                 <a class="dropdown-item" href="call_workshops.html">Call for Workshops</a>
                 <a class="dropdown-item" href="call_sponsors.html">Call for Sponsors</a>
-                 <a class="dropdown-item" href="call_showpieces.html">Call for Showpieces</a><!--
-                <a class="dropdown-item" href="call_workshops.html">Call For Workshops</a>
-                <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a> -->
+                <a class="dropdown-item" href="call_showpieces.html">Call for Showpieces</a>
+                <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -439,20 +436,7 @@
               <div id="upcoming-dates" class="tab">
                 <div id="twitter-timeline-frame">
                   <div class="list-group list-group-flush" style="margin-bottom: 0px;">
-                    <a href="#" class="list-group-item list-group-item-hover">
-                      <s><b>15 June 2018</b></s>
-                      <span id="review-date-badge" class="badge badge-info badge-pill"></span>
-                      <span id="review-warning-badge" class="badge badge-danger badge-pill"></span>
-                      <blockquote class="blockquote blockquote-flush">
-                        <p class="h4"><s>Review Notification</s></p>
-                        <div class="tool-tip badge badge-pill" style="float: right;">
-                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
-                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
-                        </div>
-                        <footer>MAIN CONFERENCE</footer>
-                      </blockquote>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-hover">
+                    <a href="#!" class="list-group-item list-group-item-hover">
                       <b>22 June 2018</b> 
                       <span id="rebuttal-date-badge" class="badge badge-info badge-pill"></span>
                       <span id="rebuttal-warning-badge" class="badge badge-danger badge-pill"></span>
@@ -465,7 +449,7 @@
                         <footer>MAIN CONFERENCE</footer>
                       </blockquote>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-hover">
+                    <a href="#!" class="list-group-item list-group-item-hover">
                       <b>6 July 2018</b> 
                       <span id="notification-date-badge" class="badge badge-info badge-pill"></span>
                       <span id="notification-warning-badge" class="badge badge-danger badge-pill"></span>
@@ -478,7 +462,20 @@
                         <footer>MAIN CONFERENCE</footer>
                       </blockquote>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-hover">
+                    <a href="#!" class="list-group-item list-group-item-hover">
+                      <b>13 July 2018</b>
+                      <span id="sp-submission-date-badge" class="badge badge-info badge-pill"></span>
+                      <span id="sp-submission-warning-badge" class="badge badge-danger badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Submission</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>SHOWPIECES</footer>
+                      </blockquote>
+                    </a>
+                    <a href="#!" class="list-group-item list-group-item-hover">
                       <b>27 July 2018</b> 
                       <span id="camera-ready-date-badge" class="badge badge-info badge-pill"></span>
                       <span id="camera-ready-warning-badge" class="badge badge-danger badge-pill"></span>
@@ -507,6 +504,25 @@
                         <div class="spacer"></div>
                         <div class="col-sm-12">
                           <span class="col-xs-3 nopadding">
+                            <img class="img-fluid img-circle" src="images/vlhcclogo_square.png" alt="Graduate Consortium">
+                          </span>
+                          <span class="col-xs-9 nopadding">
+                            <b style="margin-left: 2%; vertical-align: top;">VL/HCC Graduate Consortium</b><br/>
+                            <i class="fa fa-calendar tiny" aria-hidden="true"><small>  June. 23, 2018</small></i>
+                          </span>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">The <a href="graduate_consortium.html">Graduate Consortium</a> call is now open! Start preparing your submission</p>
+                          <a href="sponsors.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 clearfix d-md-block">
+                      <div class="card mb-2 news-block">
+                        <div class="spacer"></div>
+                        <div class="col-sm-12">
+                          <span class="col-xs-3 nopadding">
                             <img class="img-fluid img-circle" src="images/sponsors/flad.png" alt="Outsystems">
                           </span>
                           <span class="col-xs-9 nopadding">
@@ -520,6 +536,12 @@
                         </div>
                       </div>
                     </div>
+
+                  </div>
+                  <!--/.First slide-->
+
+                  <!--Second slide-->
+                  <div class="carousel-item" style="height: 100%; min-height: auto;">
 
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
@@ -540,12 +562,6 @@
                       </div>
                     </div>
 
-                  </div>
-                  <!--/.First slide-->
-
-                  <!--Second slide-->
-                  <div class="carousel-item" style="height: 100%; min-height: auto;">
-
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
                         <div class="spacer"></div>
@@ -564,6 +580,14 @@
                         </div>
                       </div>
                     </div>
+
+                  </div>
+
+                  <!--/.Second slide-->
+
+                  <!--Third slide-->
+              
+                  <div class="carousel-item" style="height: 100%; min-height: auto;">
 
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
@@ -584,14 +608,6 @@
                       </div>
                     </div>
 
-                  </div>
-
-                  <!--/.Second slide-->
-
-                  <!--Third slide-->
-              
-                  <div class="carousel-item" style="height: 100%; min-height: auto;">
-
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
                         <div class="spacer"></div>
@@ -611,6 +627,13 @@
                       </div>
                     </div>
 
+                  </div>
+            
+
+            <!--/.Third slide-->
+            <!--Fourth slide-->
+                <!--
+                  <div class="carousel-item" style="height: 100%; min-height: auto;">
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
                         <div class="spacer"></div>
@@ -631,9 +654,8 @@
                     </div>
 
                   </div>
-            
-
-            <!--/.Third slide-->
+                -->
+            <!--/.Fourth slide-->
 
           </div>
           <div class="controls-top text-center">
