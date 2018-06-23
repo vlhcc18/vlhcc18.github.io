@@ -61,14 +61,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
   <script>
     window.addEventListener("load", function(){
-    window.cookieconsent.initialise(json)
-  });
+      window.cookieconsent.initialise(json)
+    });
   </script>
   
 </head>
 
 <body>
-  
+
   <!-- Navigation -->
   <!-- Navigation -->
   <nav class="fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -109,156 +109,405 @@
                   <a class="dropdown-item" href="call_papers.html">Call for Papers</a>
                   <a class="dropdown-item" href="call_workshops.html">Call for Workshops</a>
                   <a class="dropdown-item" href="call_sponsors.html">Call for Sponsors</a>
-                 <a class="dropdown-item" href="call_showpieces.html">Call For Showpieces</a><!--
-                <a class="dropdown-item" href="call_workshops.html">Call For Workshops</a>
-                <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a> -->
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Program
-              </a>
-              <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="program_overview.html">Overview</a>
-                <a class="dropdown-item" href="program.html">Detailed Program</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Workshops
-              </a>
-              <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="workshops.html">Overview</a>
-                <a class="dropdown-item" target=_blank href="http://sems2018.ist.tugraz.at">SEMS'18</a>
-                <a class="dropdown-item" target=_blank href="https://www.cs.washington.edu/dtshps2018/">DTSHPS'18</a>
-              </div>
-            </li>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="program_overview.html">Program at a Glance</a>
-              <!-- <a class="dropdown-item" href="program.html">Detailed Program</a> -->
-              <!-- <a class="dropdown-item" href="awards.html">Awards</a> -->
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organizers</a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog"><a class="dropdown-item" href="organizers.html">Organizing Committee</a>
-              <a class="dropdown-item" href="program_committee.html">Program Committee</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" target=_blank href="http://conferences.computer.org/VLHCC/">
-              Series Charter
-            </a>
-          </li>
-          <li class="nav-item dropdown" >
-            <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="pastvlhccs.html">
-              Past VL/HCCs
-            </a>
-            
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="section consortium">
-    <!-- Page Content -->
-    <div class="container-fluid section-heading">
-
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-9">
-          <!-- Page Heading/Breadcrumbs -->
-          <h1 class="mt-4 mb-3">Graduate Consortium
-            <small></small>
-          </h1>
-
-          <ol class="breadcrumb">
-            <li class="">
-            </li>
-          </ol>
-
-        </div>
-        <div id="twitter-feed" class="col-sm-3">
-          <div id="twitter-ref">
-            <div class="spacer"></div>
-            <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
-          </div>
-          <div id="twitter-timeline-frame">
-            <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <a class="dropdown-item" href="call_showpieces.html">Call for Showpieces</a>
+                  <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Program
+                </a>
+                <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                  <a class="dropdown-item" href="program_overview.html">Overview</a>
+                  <a class="dropdown-item" href="program.html">Detailed Program</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Workshops
+                </a>
+                <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                  <a class="dropdown-item" href="workshops.html">Overview</a>
+                  <a class="dropdown-item" target=_blank href="http://sems2018.ist.tugraz.at">SEMS'18</a>
+                  <a class="dropdown-item" target=_blank href="https://www.cs.washington.edu/dtshps2018/">DTSHPS'18</a>
+                </div>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organizers</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog"><a class="dropdown-item" href="organizers.html">Organizing Committee</a>
+                  <a class="dropdown-item" href="program_committee.html">Program Committee</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" target=_blank href="http://conferences.computer.org/VLHCC/">
+                  Series Charter
+                </a>
+              </li>
+              <li class="nav-item dropdown" >
+                <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="pastvlhccs.html">
+                  Past VL/HCCs
+                </a>
+                
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
 
-  </section>
-  <!-- /.container -->
+      <section class="section consortium">
+        <!-- Page Content -->
+        <div class="container-fluid section-heading">
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container" style="max-width: 1060px;">
-      <div class="row">
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4 style="font-weight: bold;">VL/HCC 18</h4>
           <div class="row">
-            <div class="col-sm-2">
-              <i class="fa fa-home"></i>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9">
+              <!-- Page Heading/Breadcrumbs -->
+              <h1 class="mt-4 mb-3">Graduate Consortium
+                <small></small>
+              </h1>
+
+              <ol class="breadcrumb">
+                <li class="">
+                </li>
+              </ol>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <h4>Important Dates</h4>
+                  <table class="table table-striped table-responsive">
+                    <thead></thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Submission</th>
+                        <td>27 July 2018</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Notifications</th>
+                        <td>6 August 2018</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Camera Ready</th>
+                        <td>10 August 2018</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Consortium Date</th>
+                        <td>1 October 2018</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <h3>CALL FOR PARTICIPATION</h3>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>
+                    Recent advances in computing have led to continually deeper integration between computers and human
+                    society. People now live surrounded in socio-technical systems that synthesize large numbers of contributing
+                    users with vast amounts of source code. Examples include social media systems, open source repositories,
+                    online marketplaces and massively multiplayer online games.
+                  </p>
+                  <p>
+                    Yet as these socio-technical systems have grown in complexity, they have become increasingly difficult for
+                    humans to understand and direct toward productive ends. For example, when people put data into a system,
+                    they may be unable to anticipate and control how their data will be used by other people or by software in the
+                    system. When they take actions in the system, they often cannot foresee and manage unintended effects on
+                    other users, software, or the system as a whole, particularly because the software part of a system often
+                    contains defects.
+                  </p>
+                  <p>
+                    The goal of the 2018 VL/HCC Graduate Consortium is to explore ways to help find easier ways to learn, express,
+                    and understand computational ideas, which can include ways to visualize, analyze, or tailor large socio-technical
+                    systems or information generated by them. This may include development of novel methods and techniques,
+                    models and tools, such as programming environments. At a deeper level, it may include developing new theory
+                    for predicting the complicated, unstable, sometimes emergent behavior that results when large numbers of
+                    diverse, unpredictable humans are coupled to unreliable software.
+                  </p>
+                </div>
+              </div>
+
+              <h4>Why You Should Participate</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <li>Present your work to a smaller, more attentive audience.</li>
+                  <li>Get detailed, critical, constructive feedback from a diverse panel of experts.</li>
+                  <li>Meet other students working on similar problems.</li>
+                  <li>Travel funding to help cover your cost of attending VL/HCC.
+                    <ul>
+                      <li>NSF funding has been granted to support travel for students from U.S. institutions (details below).</li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+
+              <h4>Who Can Participate?</h4>
+              <div class="row" id="who_can_participate">
+                <div class="col-sm-12">
+                  <p>
+                    The consortium is open to both master's and PhD students worldwide. Participation is particularly encouraged
+                    from PhD students who are close to proposing a thesis, as well as from members of groups identified by NSF as
+                    underrepresented in the sciences and engineering. If multiple applicants from a particular university apply for the
+                    consortium this year, then no more than two per university will be selected to participate. To be eligible, each
+                    applicant may have participated no more than once in the VL/HCC graduate consortia of past years.
+                  </p>
+                </div>
+              </div>
+
+              <h4>Application Process</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>
+                    Email the following items with <b>VLHCC18-GC</b> in the subject line to Scott Fleming 
+                    (<a href="Scott.Fleming@memphis.edu">Scott.Fleming@memphis.edu</a>) and Vasco Amaral 
+                    (<a hred="vasco.amaral@fct.unl.pt">vasco.amaral@fct.unl.pt</a>):
+                  </p>
+                  <li>
+                    A 2-page research abstract, formatted as a PDF in the standard IEEE Conference Proceedings format.
+                    NOTE: Accepted participants' abstracts will be included in the conference proceedings. To make it easier
+                    for you to write a successful abstract, we provide examples from past years below. Your curriculum vitae
+                    (CV), as a second PDF file. This CV should mention whether you have previously participated in any
+                    graduate consortia at any conferences.
+                  </li>
+                  <li>
+                    A letter of recommendation sent directly by your thesis advisor. This letter should summarize your
+                    accomplishments and describe how far along you are in your master's or PhD program, why attending the
+                    GC this year would be important for you, and please ask them to mention if you have already attended
+                    VL/HCC GC in any past year. In addition, if you are a member of a group designated by NSF as
+                    underrepresented, then the letter may mention this fact.
+                  </li>
+                </div>
+              </div>
+
+              <h4>Selection Process</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>
+                    For one-third of the slots, students who have participated once before will be given priority. The remaining slots
+                    will be given to students who are new to the event. Each student from the returning group will be linked with new
+                    students in a mentoring arrangement. See <b><a href="#who_can_participate">Who Can Participate?</a></b> above for additional selection criteria.
+                  </p>
+                </div>
+              </div>
+
+              <h4>Posters</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>
+                    Selected students will be asked to present a poster on their work at the Showpieces Reception during the main
+                    conference. Details will be provided to accepted applicants.
+                  </p>
+
+                </div>
+              </div>
+
+              <h4>Travel Support</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>
+                    We are happy to announce that we have received a grant from the National Science Foundation to support
+                    participation by students from U.S. universities. This funding will cover:
+                  </p>
+                  <li>
+                    Travel to Lisbon, Portugal
+                  </li>
+                  <li>
+                    Registration to VL/HCC and the graduate consortium
+                  </li>
+                  <li>
+                    Lodging in a Universidade NOVA De Lisboa residence hall (for both VL/HCC and the graduate consortium)
+                  </li>
+                  <li>
+                    Meals for the day of the graduate consortium
+                  </li>
+                  <p>
+                    Note that we have a fixed budget for travel support. Based on our budget, we can cover at least up to $2,114
+                    USD in the above travel expenses per student. Additional expenses may also be covered depending on the
+                    availability of funds.
+                  </p>
+
+                </div>
+              </div>
+
+              <h4>Schedule</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>
+                    The consortium event will be a full day the Monday before the main conference. All participating students are
+                    expected to attend the main conference as well as the graduate consortium. Other conference attendees are
+                    invited to attend the consortium, to listen to the presentations, to interact with participants, and to give feedback
+                    to presenters. More details will be provided, closer to the event, including times and locations.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4>Examples of Successful Applications</h4>
+                  <p>To be successful, a submission to the VL/HCC Graduate Consortium generally has to have the following parts:</p>
+                  <ol>
+                    <li>
+                      The paper starts with a sentence or two that describes a real-world setting.
+                    </li>
+                    <li>
+                      It then identifies a problem in that setting.
+                    </li>
+                    <li>
+                      The remainder of the paper's introduction outlines an approach for solving that problem.
+                    </li>
+                    <li>
+                      In a subsequent section, the paper describes a prototype or preliminary study showing the feasibility of
+                    </li>
+                    that approach.
+                    <li>
+                      The paper explains why more work is still required in addition to this prior work.
+                    </li>
+                    <li>
+                      The paper concludes by describing future work that will build on this prior work in order to finish
+                      completing the approach.
+                    </li>
+                    <li>
+                      Somewhere along the way, the paper explains how the approach builds on, or differs from, other related
+                      work.
+                    </li>
+                  </ol>
+                  <p>
+                    We have annotated three excellent submissions that exemplify the pattern described above. We hope that you
+                    will find these examples thought-provoking and helpful as you design your own submission this year.
+                  </p>
+                  <li>
+                    <a href="resources/zang.pdf" target="_blank">Information on the Web: How End Users Make Use of Data</a>
+                  </li>
+                  <li>
+                    <a href="resources/fan.pdf" target="_blank">Roles in Online Collaborative Problem Solving</a>
+                  </li>
+                  <li>
+                    <a href="resources/toomim.pdf" target="_blank">Re-forming the Internet with its End Users</a>
+                  </li>
+
+                </div>
+              </div>
+
+              <h4>Panel Members and Organizers</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <li>
+                    <a href="http://nova-lincs.di.fct.unl.pt/person/36" target="_blank">Vasco Amaral</a>, Universidade Nova de Lisboa (co-chair)
+                  </li>
+                  <li>
+                    <a href="http://www.cs.memphis.edu/~sdf/" target="_blank">Scott Fleming</a>, University of Memphis (co-chair)
+                  </li>
+                  <li>
+                    <a href="https://people.cs.clemson.edu/~etkraem/" target="_blank">Eileen Kraemer</a>, Clemson University
+                  </li>
+                  <li>
+                    <a href="http://eecs.oregonstate.edu/people/sarma-anita" target="_blank">Anita Sarma</a>, Oregon State University
+                  </li>
+                </div>
+              </div>
+
+              <div class="share">
+                  <div class="spacer"></div>
+                  <div class="fb-share-button" data-href="https://vlhcc18.github.io/graduate_consortium.html" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+                    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvlhcc18.github.io%2Fgraduate_consortium.html&amp;src=sdkpreparse">
+                      Share
+                    </a>
+                  </div>
+
+                  <a class="twitter-share-button"
+                  href="https://twitter.com/intent/tweet?text=Participate%20in%20the%20VL/HCC%202018%20Graduate%20Consortium.%20The%20Call%20is%20now%20open!%20@vlhcc"
+                  data-url="https://vlhcc18.github.io/graduate_consortium.html"
+                  data-hashtags="vlhcc,vlhcc2018"
+                  data-size="large">
+                Tweet</a>
+              </div>
+
             </div>
-            <div class="col-sm-10">
-              Universidade NOVA de Lisboa<br/>
-              Campus de Campolide<br/>
-              1099-085 Lisboa<br/>
+            <div id="twitter-feed" class="col-sm-3">
+              <div id="twitter-ref">
+                <div class="spacer"></div>
+                <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
+              </div>
+              <div id="twitter-timeline-frame">
+                <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
             </div>
           </div>
+        </div>
 
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Attending</h4>
-          <a href="important_dates.html" class="text-white">Important Dates</a>
-          <!-- <a href="registration.html" class="text-white">Registration</a> -->
+      </section>
+      <!-- /.container -->
 
-          <br/>
-          <a href="venue.html" class="text-white">Venue</a><br/>
-          <a href="hotels.html" class="text-white">Hotels</a>
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Calls</h4>
-          <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
-          <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
-          <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
-          <a href="call_showpieces.html" class="text-white">Call for Showpieces</a><br/>
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Program</h4>
-          <a href="program_overview.html" class="text-white">Overview</a><br/>
-          <a href="program.html" class="text-white">Detailed</a><br/>
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <a href="workshops.html" class="text-white"> <h4>Workshops</h4> </a>
-          <a href="http://sems2018.ist.tugraz.at/" target=_blank class="text-white">SEMS'18</a><br/>
-          <a href="https://www.cs.washington.edu/dtshps2018/" class="text-white">DTSHPS'18</a>
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Committees</h4>
-          <a href="organizers.html" class="text-white">Org. Committee</a><br/>
-          <a href="program_committee.html" class="text-white">Prog. Committee</a>
-        </div>
-      </div>
-      <div class="row spacer">
-        <div class="col-sm-12 text-center">
-          <p class="m-0 text-center text-white">>  <a href="https://www.ieee.org/security-privacy.html" style="color: white; font-weight: bold;">IEEE Privacy Policy</a>  <</p>
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
-  </footer>
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+        <div class="container" style="max-width: 1060px;">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 text-white">
+              <h4 style="font-weight: bold;">VL/HCC 18</h4>
+              <div class="row">
+                <div class="col-sm-2">
+                  <i class="fa fa-home"></i>
+                </div>
+                <div class="col-sm-10">
+                  Universidade NOVA de Lisboa<br/>
+                  Campus de Campolide<br/>
+                  1099-085 Lisboa<br/>
+                </div>
+              </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            </div>
+            <div class="col-md-2 col-sm-2 text-white">
+              <h4>Attending</h4>
+              <a href="important_dates.html" class="text-white">Important Dates</a>
+              <!-- <a href="registration.html" class="text-white">Registration</a> -->
 
-</body>
+              <br/>
+              <a href="venue.html" class="text-white">Venue</a><br/>
+              <a href="hotels.html" class="text-white">Hotels</a>
+            </div>
+            <div class="col-md-2 col-sm-2 text-white">
+              <h4>Calls</h4>
+              <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
+              <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
+              <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
+              <a href="call_showpieces.html" class="text-white">Call for Showpieces</a><br/>
+              <a href="graduate_consortium.html" class="text-white">Graduate Consortium</a><br/>
+            </div>
+            <div class="col-md-2 col-sm-2 text-white">
+              <h4>Program</h4>
+              <a href="program_overview.html" class="text-white">Overview</a><br/>
+              <a href="program.html" class="text-white">Detailed</a><br/>
+            </div>
+            <div class="col-md-2 col-sm-2 text-white">
+              <a href="workshops.html" class="text-white"> <h4>Workshops</h4> </a>
+              <a href="http://sems2018.ist.tugraz.at/" target=_blank class="text-white">SEMS'18</a><br/>
+              <a href="https://www.cs.washington.edu/dtshps2018/" class="text-white">DTSHPS'18</a>
+            </div>
+            <div class="col-md-2 col-sm-2 text-white">
+              <h4>Committees</h4>
+              <a href="organizers.html" class="text-white">Org. Committee</a><br/>
+              <a href="program_committee.html" class="text-white">Prog. Committee</a>
+            </div>
+          </div>
+          <div class="row spacer">
+            <div class="col-sm-12 text-center">
+              <p class="m-0 text-center text-white">>  <a href="https://www.ieee.org/security-privacy.html" style="color: white; font-weight: bold;">IEEE Privacy Policy</a>  <</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </footer>
 
-</html>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/popper/popper.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+
+    </html>
