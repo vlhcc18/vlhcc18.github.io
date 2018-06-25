@@ -126,6 +126,15 @@
       var diffShowpieceCameraReady = Math.ceil((Math.abs(dateShowpieceCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
 
 
+      // Posters Dates
+      var datePostersSubmission = new Date(Date.UTC(2018,6,13, 11,59,59))
+      var datePostersNotification = new Date(Date.UTC(2018,6,27, 11,59,59))
+      var datePostersCameraReady = new Date(Date.UTC(2018,7,10, 11,59,59))
+
+      var diffPostersSubmission = Math.ceil((Math.abs(datePostersSubmission.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffPostersNotification = Math.ceil((Math.abs(datePostersNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+      var diffPostersCameraReady = Math.ceil((Math.abs(datePostersCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
+
       // Graduate Consortium Dates
       var dateConsortiumSubmission = new Date(Date.UTC(2018,6,27, 11,59,59))
       var dateConsortiumNotification = new Date(Date.UTC(2018,7,6, 11,59,59))
@@ -221,6 +230,7 @@
                 <a class="dropdown-item" href="call_workshops.html">Call for Workshops</a>
                 <a class="dropdown-item" href="call_sponsors.html">Call for Sponsors</a>
                 <a class="dropdown-item" href="call_showpieces.html">Call for Showpieces</a>
+                <a class="dropdown-item" href="call_posters.html">Call for Posters</a>
                 <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a>
               </div>
             </li>
@@ -459,7 +469,7 @@
                           <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
                           <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
                         </div>
-                        <footer>SHOWPIECES</footer>
+                        <footer>SHOWPIECES &nbsp&nbsp/&nbsp&nbsp POSTERS</footer>
                       </blockquote>
                     </a>
                     <a href="#!" class="list-group-item list-group-item-hover">
@@ -472,7 +482,7 @@
                           <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
                           <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
                         </div>
-                        <footer>MAIN CONFERENCE</footer>
+                        <footer>MAIN CONFERENCE &nbsp&nbsp/&nbsp&nbsp SHOWPIECES &nbsp&nbsp/&nbsp&nbsp POSTERS</footer>
                       </blockquote>
                     </a>
                     <a href="#!" class="list-group-item list-group-item-hover">
@@ -507,16 +517,41 @@
                             <img class="img-fluid img-circle" src="images/vlhcclogo_square.png" alt="Graduate Consortium">
                           </span>
                           <span class="col-xs-9 nopadding">
+                            <b style="margin-left: 2%; vertical-align: top;">VL/HCC Call for Posters</b><br/>
+                            <i class="fa fa-calendar tiny" aria-hidden="true"><small>  June. 25, 2018</small></i>
+                          </span>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">Prepare your posters. The VL/HCC 2018 call is now open. Click below for more info.</p>
+                          <a href="call_posters.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 clearfix d-md-block">
+                      <div class="card mb-2 news-block">
+                        <div class="spacer"></div>
+                        <div class="col-sm-12">
+                          <span class="col-xs-3 nopadding">
+                            <img class="img-fluid img-circle" src="images/vlhcclogo_square.png" alt="Graduate Consortium">
+                          </span>
+                          <span class="col-xs-9 nopadding">
                             <b style="margin-left: 2%; vertical-align: top;">VL/HCC Graduate Consortium</b><br/>
                             <i class="fa fa-calendar tiny" aria-hidden="true"><small>  June. 23, 2018</small></i>
                           </span>
                         </div>
                         <div class="card-body">
-                          <p class="card-text">The <a href="graduate_consortium.html">Graduate Consortium</a> call is now open! Start preparing your submission</p>
-                          <a href="sponsors.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                          <p class="card-text">The Graduate Consortium call is now open! Start preparing your submission.</p>
+                          <a href="graduate_consortium.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
                         </div>
                       </div>
                     </div>
+
+                  </div>
+                  <!--/.First slide-->
+
+                  <!--Second slide-->
+                  <div class="carousel-item" style="height: 100%; min-height: auto;">
 
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
@@ -537,12 +572,6 @@
                       </div>
                     </div>
 
-                  </div>
-                  <!--/.First slide-->
-
-                  <!--Second slide-->
-                  <div class="carousel-item" style="height: 100%; min-height: auto;">
-
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
                         <div class="spacer"></div>
@@ -561,6 +590,14 @@
                         </div>
                       </div>
                     </div>
+
+                  </div>
+
+                  <!--/.Second slide-->
+
+                  <!--Third slide-->
+              
+                  <div class="carousel-item" style="height: 100%; min-height: auto;">
 
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
@@ -581,14 +618,6 @@
                       </div>
                     </div>
 
-                  </div>
-
-                  <!--/.Second slide-->
-
-                  <!--Third slide-->
-              
-                  <div class="carousel-item" style="height: 100%; min-height: auto;">
-
                     <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
                         <div class="spacer"></div>
@@ -608,7 +637,15 @@
                       </div>
                     </div>
 
-                    <div class="col-sm-12 clearfix d-md-block">
+                  </div>
+            
+
+            <!--/.Third slide-->
+            <!--Fourth slide-->
+            
+              <div class="carousel-item" style="height: 100%; min-height: auto;">
+
+                <div class="col-sm-12 clearfix d-md-block">
                       <div class="card mb-2 news-block">
                         <div class="spacer"></div>
                         <div class="col-sm-12">
@@ -627,34 +664,27 @@
                       </div>
                     </div>
 
-                  </div>
-            
-
-            <!--/.Third slide-->
-            <!--Fourth slide-->
-                <!--
-                  <div class="carousel-item" style="height: 100%; min-height: auto;">
-                    <div class="col-sm-12 clearfix d-md-block">
-                      <div class="card mb-2 news-block">
-                        <div class="spacer"></div>
-                        <div class="col-sm-12">
-                          <span class="col-xs-3 nopadding">
-                            <img class="img-fluid img-circle" src="images/geraldine.jpeg" alt="Geraldine Fitzpatrick">
-                          </span>
-                          <span class="col-xs-9 nopadding">
-                            <b style="margin-left: 2%; vertical-align: top;">Keynote Speaker</b><br/>
-                            <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Feb. 26, 2018</small></i>
-                          </span>
-                        </div>
-                        <div class="card-body">
-                          <p class="card-text"><a href="http://igw.tuwien.ac.at/hci/people/gfitzpatrick" target="_blank">Geraldine Fitzpatrick</a> is now confirmed as our first keynote speaker.</p>
-                          <a href="keynotes.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
-                        </div>
-                      </div>
+                <div class="col-sm-12 clearfix d-md-block">
+                  <div class="card mb-2 news-block">
+                    <div class="spacer"></div>
+                    <div class="col-sm-12">
+                      <span class="col-xs-3 nopadding">
+                        <img class="img-fluid img-circle" src="images/geraldine.jpeg" alt="Geraldine Fitzpatrick">
+                      </span>
+                      <span class="col-xs-9 nopadding">
+                        <b style="margin-left: 2%; vertical-align: top;">Keynote Speaker</b><br/>
+                        <i class="fa fa-calendar tiny" aria-hidden="true"><small>  Feb. 26, 2018</small></i>
+                      </span>
                     </div>
-
+                    <div class="card-body">
+                      <p class="card-text"><a href="http://igw.tuwien.ac.at/hci/people/gfitzpatrick" target="_blank">Geraldine Fitzpatrick</a> is now confirmed as our first keynote speaker.</p>
+                      <a href="keynotes.html"><i class="fa fa-plus-circle more-info-link" aria-hidden="true">  Info</i></a>
+                    </div>
                   </div>
-                -->
+                </div>
+
+              </div>
+            
             <!--/.Fourth slide-->
 
           </div>
@@ -721,6 +751,7 @@
         <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
          <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
          <a href="call_showpieces.html" class="text-white">Call for Showpieces</a><br/>
+         <a href="call_posters.html" class="text-white">Call for Posters</a><br/>
          <a href="graduate_consortium.html" class="text-white">Graduate Consortium</a><br/>
       </div>
       <div class="col-md-2 col-sm-2 text-white">
