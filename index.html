@@ -165,6 +165,11 @@
         $("#gc-submission-warning-badge").text("Today!");
       }
 
+      $("#gc-notification-date-badge").text(diffConsortiumNotification);
+      if (diffConsortiumNotification === "1 days left") {
+        $("#gc-notification-warning-badge").text("Today!");
+      }
+
     });
   	
   </script>
@@ -445,20 +450,7 @@
               </div>
               <div id="upcoming-dates" class="tab">
                 <div id="twitter-timeline-frame">
-                  <div class="list-group list-group-flush" style="margin-bottom: 0px;">                    
-                    <a href="#!" class="list-group-item list-group-item-hover">
-                      <b>6 July 2018</b> 
-                      <span id="notification-date-badge" class="badge badge-info badge-pill"></span>
-                      <span id="notification-warning-badge" class="badge badge-danger badge-pill"></span>
-                      <blockquote class="blockquote blockquote-flush">
-                        <p class="h4">Paper Notification</p>
-                        <div class="tool-tip badge badge-pill" style="float: right;">
-                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
-                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
-                        </div>
-                        <footer>MAIN CONFERENCE</footer>
-                      </blockquote>
-                    </a>
+                  <div class="list-group list-group-flush" style="margin-bottom: 0px;">
                     <a href="#!" class="list-group-item list-group-item-hover">
                       <b>13 July 2018</b>
                       <span id="sp-submission-date-badge" class="badge badge-info badge-pill"></span>
@@ -491,6 +483,19 @@
                       <span id="gc-submission-warning-badge" class="badge badge-danger badge-pill"></span>
                       <blockquote class="blockquote blockquote-flush">
                         <p class="h4">Paper Submission</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>GRADUATE CONSORTIUM</footer>
+                      </blockquote>
+                    </a>
+                    <a href="#!" class="list-group-item list-group-item-hover">
+                      <b>6 August 2018</b> 
+                      <span id="gc-notification-date-badge" class="badge badge-info badge-pill"></span>
+                      <span id="gc-notification-warning-badge" class="badge badge-danger badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Notification</p>
                         <div class="tool-tip badge badge-pill" style="float: right;">
                           <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
                           <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
