@@ -55,6 +55,15 @@
 
     gtag('config', 'UA-113713203-1');
   </script>
+
+  <script src="https://s3-us-west-2.amazonaws.com/ieeeshutpages/gdpr/settings.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise(json)
+    });
+  </script>
 </head>
 
 <body>
@@ -62,7 +71,7 @@
   <!-- Navigation -->
   <!-- Navigation -->
   <nav class="fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container" style="max-width: 1040px;">
+    <div class="container" style="max-width: 1060px;">
       <a class="navbar-brand" style="padding: 0px;" href="index.html"><img src="images/vlhcclogo.png" style="width: 170px;"></a>
         <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -100,29 +109,29 @@
                   <a class="dropdown-item" href="call_papers.html">Call for Papers</a>
                   <a class="dropdown-item" href="call_workshops.html">Call for Workshops</a>
                   <a class="dropdown-item" href="call_sponsors.html">Call for Sponsors</a>
-                 <a class="dropdown-item" href="call_showpieces.html">Call For Showpieces</a><!--
-                <a class="dropdown-item" href="call_workshops.html">Call For Workshops</a>
-                <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a> -->
+                  <a class="dropdown-item" href="call_showpieces.html">Call for Showpieces</a>
+                  <a class="dropdown-item" href="call_posters.html">Call for Posters</a>
+                  <a class="dropdown-item" href="graduate_consortium.html">Graduate Consortium</a>
+                  <a class="dropdown-item" href="call_mip.html">Call for Nominations</a>
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="program_overview.html">Program
+              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Program
               </a>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Workshops
-                </a>
-                <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
-                  <a class="dropdown-item" href="workshops.html">Overview</a>
-                  <a class="dropdown-item" target=_blank href="http://sems2018.ist.tugraz.at">SEMS'18</a>
-                  <a class="dropdown-item" href="#!">DTSHPS'18</a>
-                </div>
-              </li>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="program_overview.html">Program at a Glance</a>
-                <!-- <a class="dropdown-item" href="program.html">Detailed Program</a> -->
-                <!-- <a class="dropdown-item" href="awards.html">Awards</a> -->
+              <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="program_overview.html">Overview</a>
+                <a class="dropdown-item" href="program.html">Detailed Program</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="attending" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Workshops
+              </a>
+              <div class="dropdown-menu dropdown-menu-right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="workshops.html">Overview</a>
+                <a class="dropdown-item" target=_blank href="http://sems2018.ist.tugraz.at">SEMS'18</a>
+                <a class="dropdown-item" target=_blank href="https://www.cs.washington.edu/dtshps2018/">DTSHPS'18</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -140,7 +149,7 @@
               <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="pastvlhccs.html">
                 Past VL/HCCs
               </a>
-              
+
             </li>
           </ul>
         </div>
@@ -200,7 +209,7 @@
             <div class="row">
               <div class="col-xs-3">
                 <div class="sponsor">
-                  <a href="#!"><img class="img-fluid img-responsive" src="images/blank_white.png"></a>
+                  <a href="https://www.cs.washington.edu/dtshps2018/" target="_blank"><img class="img-fluid img-responsive" src="images/dtshps.png"></a>
                 </div>
               </div>
 
@@ -209,9 +218,9 @@
                   An important arena for building human-adaptive socio-technical systems is new designs that address the
                   solving of global challenges such as climate change, drug-resistant diseases, and nuclear proliferation.
                   Such “wicked” problems necessitate the engagement and collaboration of multidisciplinary teams of
-                  people with the support of appropriate computer-based tools. </p>
+                people with the support of appropriate computer-based tools. </p>
 
-                  <p>This workshop will address the following
+                <p>This workshop will address the following
                   questions related to the design of such systems: What possible new forms of human problem-solving
                   experiences should be supported by new online tools? What social structures and workflows may need to be
                   supported? How should students and professionals be educated and trained in order to be able to function
@@ -247,7 +256,7 @@
 
       <!-- Footer -->
       <footer class="py-5 bg-dark">
-        <div class="container" style="max-width: 1040px;">
+        <div class="container" style="max-width: 1060px;">
           <div class="row">
             <div class="col-md-2 col-sm-2 text-white">
               <h4 style="font-weight: bold;">VL/HCC 18</h4>
@@ -276,16 +285,21 @@
               <h4>Calls</h4>
               <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
               <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
-               <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
-            <a href="call_showpieces.html" class="text-white">Call for Showpieces</a><br/>
+              <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
+              <a href="call_showpieces.html" class="text-white">Call for Showpieces</a><br/>
+              <a href="call_posters.html" class="text-white">Call for Posters</a><br/>
+              <a href="graduate_consortium.html" class="text-white">Graduate Consortium</a><br/>
+              <a href="call_mip.html" class="text-white">Call for Nominations</a><br/>
             </div>
             <div class="col-md-2 col-sm-2 text-white">
-              <a href="program_overview.html" class="text-white"> <h4>Program</h4> </a>
+              <h4>Program</h4>
+              <a href="program_overview.html" class="text-white">Overview</a><br/>
+              <a href="program.html" class="text-white">Detailed</a><br/>
             </div>
             <div class="col-md-2 col-sm-2 text-white">
               <a href="workshops.html" class="text-white"> <h4>Workshops</h4> </a>
               <a href="http://sems2018.ist.tugraz.at/" target=_blank class="text-white">SEMS'18</a><br/>
-              <a href="#!" class="text-white">DTSHPS'18</a>
+              <a href="https://www.cs.washington.edu/dtshps2018/" class="text-white">DTSHPS'18</a>
             </div>
             <div class="col-md-2 col-sm-2 text-white">
               <h4>Committees</h4>
@@ -295,7 +309,7 @@
           </div>
           <div class="row spacer">
             <div class="col-sm-12 text-center">
-              <!-- <p class="m-0 text-center text-white">Copyright &copy; <a href="http://greenlab.di.uminho.pt" style="color: white; font-weight: bold;">Green Lab</a></p> -->
+              <p class="m-0 text-center text-white">>  <a href="https://www.ieee.org/security-privacy.html" target="_blank" style="color: white; font-weight: bold;">IEEE Privacy Policy</a>  <</p>
             </div>
           </div>
         </div>
