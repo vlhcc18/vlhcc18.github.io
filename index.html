@@ -145,19 +145,9 @@
       var diffConsortiumCameraReady = Math.ceil((Math.abs(dateConsortiumCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
       
 
-      $("#notification-date-badge").text(diffNotification);
-      if (diffNotification === "1 days left") {
-        $("#notification-warning-badge").text("Today!");
-      }
-
       $("#camera-ready-date-badge").text(diffCameraReady);
       if (diffCameraReady === "1 days left") {
         $("#camera-ready-warning-badge").text("Today!");
-      }
-
-      $("#sp-submission-date-badge").text(diffShowpieceSubmission);
-      if (diffShowpieceSubmission === "1 days left") {
-        $("#sp-submission-warning-badge").text("Today!");
       }
 
       $("#gc-submission-date-badge").text(diffConsortiumSubmission);
@@ -168,6 +158,16 @@
       $("#gc-notification-date-badge").text(diffConsortiumNotification);
       if (diffConsortiumNotification === "1 days left") {
         $("#gc-notification-warning-badge").text("Today!");
+      }
+
+      $("#gc-notification-date-badge").text(diffConsortiumNotification);
+      if (diffConsortiumNotification === "1 days left") {
+        $("#gc-notification-warning-badge").text("Today!");
+      }
+
+      $("#sp-camera-ready-date-badge").text(diffShowpieceCameraReady);
+      if (diffShowpieceCameraReady === "1 days left") {
+        $("#gc-camera-ready-warning-badge").text("Today!");
       }
 
     });
@@ -460,19 +460,6 @@
                 <div id="twitter-timeline-frame">
                   <div class="list-group list-group-flush" style="margin-bottom: 0px;">
                     <a href="#!" class="list-group-item list-group-item-hover">
-                      <b>20 July 2018</b>
-                      <span id="sp-submission-date-badge" class="badge badge-info badge-pill"></span>
-                      <span id="sp-submission-warning-badge" class="badge badge-danger badge-pill"></span>
-                      <blockquote class="blockquote blockquote-flush">
-                        <p class="h4">Submission</p>
-                        <div class="tool-tip badge badge-pill" style="float: right;">
-                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
-                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
-                        </div>
-                        <footer>SHOWPIECES &nbsp&nbsp/&nbsp&nbsp POSTERS</footer>
-                      </blockquote>
-                    </a>
-                    <a href="#!" class="list-group-item list-group-item-hover">
                       <b>27 July 2018</b> 
                       <span id="camera-ready-date-badge" class="badge badge-info badge-pill"></span>
                       <span id="camera-ready-warning-badge" class="badge badge-danger badge-pill"></span>
@@ -509,6 +496,19 @@
                           <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
                         </div>
                         <footer>GRADUATE CONSORTIUM</footer>
+                      </blockquote>
+                    </a>
+                    <a href="#!" class="list-group-item list-group-item-hover">
+                      <b>10 August 2018</b>
+                      <span id="sp-camera-ready-date-badge" class="badge badge-info badge-pill"></span>
+                      <span id="sp-camera-ready-warning-badge" class="badge badge-danger badge-pill"></span>
+                      <blockquote class="blockquote blockquote-flush">
+                        <p class="h4">Camera Ready Copy</p>
+                        <div class="tool-tip badge badge-pill" style="float: right;">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
+                          <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
+                        </div>
+                        <footer>SHOWPIECES &nbsp&nbsp/&nbsp&nbsp POSTERS &nbsp&nbsp/&nbsp&nbsp GRADUATE CONSORTIUM</footer>
                       </blockquote>
                     </a>
                   </div>
