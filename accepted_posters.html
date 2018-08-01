@@ -30,8 +30,8 @@
   <link rel='stylesheet' id='owl-carousel-css'  href='css/plugins/owl.carousel.css' type='text/css' media='all' />
   <link rel='stylesheet' id='nivo-lightbox-css'  href='css/plugins/nivo-lightbox.css' type='text/css' media='all' />
   <link rel='stylesheet' id='superfish-css'  href='css/plugins/superfish.css' type='text/css' media='all' />
-  
-  
+
+
   <script type='text/javascript' src='js/plugins/jquery.bxslider.js'></script>
   <script type='text/javascript' src='js/plugins/owl.carousel.js'></script>
   <script type='text/javascript' src='js/plugins/nivo-lightbox.js'></script>
@@ -61,12 +61,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
   <script>
     window.addEventListener("load", function(){
-    window.cookieconsent.initialise(json)
-  });
+      window.cookieconsent.initialise(json)
+    });
   </script>
+  
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Navigation -->
   <!-- Navigation -->
@@ -142,121 +153,86 @@
                 <a class="dropdown-item" target=_blank href="https://www.cs.washington.edu/dtshps2018/">DTSHPS'18</a>
               </div>
             </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organizers</a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog"><a class="dropdown-item" href="organizers.html">Organizing Committee</a>
-              <a class="dropdown-item" href="program_committee.html">Program Committee</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" target=_blank href="http://conferences.computer.org/VLHCC/">
-              Series Charter
-            </a>
-          </li>
-          <li class="nav-item dropdown" >
-            <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="pastvlhccs.html">
-              Past VL/HCCs
-            </a>
-            
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="section venue">
-    <!-- Page Content -->
-    <div class="container-fluid section-heading">
-
-      <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-9">
-
-          <!-- Page Heading/Breadcrumbs -->
-          <h1 class="mt-4 mb-3">Sponsors
-            <small></small>
-          </h1>
-
-          <ol class="breadcrumb">
-            <li class="">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="padding-right: 1rem; padding-left: 1rem;" href="#" id="submitting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Organizers</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog"><a class="dropdown-item" href="organizers.html">Organizing Committee</a>
+                <a class="dropdown-item" href="program_committee.html">Program Committee</a>
+              </div>
             </li>
-          </ol>
+            <li class="nav-item">
+              <!-- <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="#">Series Charter</a> -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" target=_blank href="http://conferences.computer.org/VLHCC/">
+                Series Charter
+              </a>
+            </li>
+            <li class="nav-item dropdown" >
+              <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="pastvlhccs.html">
+                Past VL/HCCs
+              </a>
 
-          <h3>SILVER SPONSORS</h3>
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="sponsor">
-                <a href="https://www.outsystems.com/" target="_blank"><img class="img-fluid img-responsive" src="images/sponsors/outsystems.png"></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row spacer"></div>
-
-          <h3>BRONZE SPONSORS</h3>
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="sponsor">
-                <a href="http://www.flad.pt/" target="_blank"><img class="img-fluid img-responsive" src="images/sponsors/flad.png"></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row spacer"></div>
-
-          <h3>SUPPORTERS</h3>
-          <div class="row">
-
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="sponsor">
-                <a href="https://www.uc.pt/" target="_blank"><img class="img-fluid img-responsive" src="images/sponsors/uc.png"></a>
-              </div>
-            </div>
-            
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="sponsor">
-                <a href="https://www.uminho.pt/" target="_blank"><img class="img-fluid img-responsive" src="images/sponsors/uminho.png"></a>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="sponsor">
-                <a href="https://www.unl.pt/" target="_blank"><img class="img-fluid img-responsive" src="images/sponsors/nova.png"></a>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="sponsor">
-                <a href="https://www.cisuc.uc.pt/" target="_blank"><img class="img-responsive" src="images/sponsors/cisuc.png"></a>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-6 col-md-3">
-              <div class="sponsor">
-                <a href="http://nova-lincs.di.fct.unl.pt/" target="_blank"><img class="img-responsive" src="images/sponsors/novalincs.png"></a>
-              </div>
-            </div>
-
-          </div>
-
-          
+            </li>
+          </ul>
         </div>
-        <div id="twitter-feed" class="col-sm-3">
-          <div id="twitter-ref">
-            <div class="spacer"></div>
-            <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
+      </div>
+    </nav>
+
+    <section class="section papers p-justify">
+      <!-- Page Content -->
+      <div class="container-fluid section-heading">
+
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-9">
+            <!-- Page Heading/Breadcrumbs -->
+            <h1 class="mt-4 mb-3">Accepted Posters
+              <small></small>
+            </h1>
+
+            <ol class="breadcrumb">
+              <li class="">
+              </li>
+            </ol>
+
+            <div class="row">
+
+              <div class="col-sm-12">
+                <ul>
+                 	<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Human-Centric Programming in the Large - Command Languages to Scalable Cyber Training"</i>,&nbsp; Prasun Dewan, Blake Joyce and Nirav Merchant</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Visual Knowledge Negotiation"</i>,&nbsp; Alan Blackwell, Luke Church, Matthew Mahmoudi and Mariana Marasoiu</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"A Modelling Language for Defining Cloud Simulation Scenarios in RECAP Project Context"</i>,&nbsp; Cleber Matos de Morais, Patricia Takako Endo, Sergej Svorobej and Theo Lynn</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"A Vision for Interactive Suggested Examples for Novice Programmers"</i>,&nbsp; Michelle Ichinco</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"An Exploratory Study of Web Foraging to Understand and Support Programming Decisions"</i>,&nbsp; Jane Hsieh, Xieyang Liu, Brad Myers and Aniket Kittur</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Graphical Visualization of Difficulties Predicted from Interaction Logs"</i>,&nbsp; Duri Long, Kevin Wang, Jason Carter and Prasun Dewan</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"How End Users Express Conditionals in Programming by Demonstration for Mobile Apps"</i>,&nbsp; Marissa Radensky, Toby Jia-Jun Li and Brad Myers</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Educational Impact of Syntax Directed Translation Visualization, a Preliminary Study"</i>,&nbsp; Damián Nicolalde and Jaime Urquiza-Fuentes</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Semantic Clone Detection: Can Source Code Comments Help?"</i>,&nbsp; Akash Ghosh, Sandeep Kaur Kuttal</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"What Makes a Good Developer? An Empirical Study of Developers' Technical and Social Competencies"</i>,&nbsp; Cheng Zhou, Sandeep Kaur Kuttal, Iftekhar Ahmed</li>
+					<li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Visualizing Path Exploration to Assist Problem Diagnosis for Structural Test Generation"</i>,&nbsp; Jiayi Cao, Angello Astorga, Siwakorn Srisakaokul, Zhengkai Wu, Xueqing Liu, Xusheng Xiao, Tao Xie</li>
+
+                </ul>
+              </div>
+            </div>
+
+
           </div>
-          <div id="twitter-timeline-frame">
-            <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div id="twitter-feed" class="col-sm-3">
+            <div id="twitter-ref">
+              <div class="spacer"></div>
+              <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
+            </div>
+            <div id="twitter-timeline-frame">
+              <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Image Header -->
-      <div class="section-line"></div>
     </section>
     <!-- /.container -->
+
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container" style="max-width: 1060px;">
