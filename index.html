@@ -143,17 +143,7 @@
       var diffConsortiumSubmission = Math.ceil((Math.abs(dateConsortiumSubmission.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
       var diffConsortiumNotification = Math.ceil((Math.abs(dateConsortiumNotification.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
       var diffConsortiumCameraReady = Math.ceil((Math.abs(dateConsortiumCameraReady.getTime() - today.getTime())) / (1000 * 3600 * 24)).toString() + " days left";
-      
 
-      $("#gc-notification-date-badge").text(diffConsortiumNotification);
-      if (diffConsortiumNotification === "1 days left") {
-        $("#gc-notification-warning-badge").text("Today!");
-      }
-
-      $("#gc-notification-date-badge").text(diffConsortiumNotification);
-      if (diffConsortiumNotification === "1 days left") {
-        $("#gc-notification-warning-badge").text("Today!");
-      }
 
       $("#sp-camera-ready-date-badge").text(diffShowpieceCameraReady);
       if (diffShowpieceCameraReady === "1 days left") {
@@ -481,11 +471,11 @@
                       </blockquote>
                     </a>
                     <a href="#!" class="list-group-item list-group-item-hover">
-                      <b>6 August 2018</b> 
-                      <span id="gc-notification-date-badge" class="badge badge-info badge-pill"></span>
+                      <b><s>6 August 2018</s></b> 
+                      <span id="gc-notification-date-badge" class="badge badge-warning badge-pill">expired</span>
                       <span id="gc-notification-warning-badge" class="badge badge-danger badge-pill"></span>
                       <blockquote class="blockquote blockquote-flush">
-                        <p class="h4">Notification</p>
+                        <p class="h4"><s>Notification</s></p>
                         <div class="tool-tip badge badge-pill" style="float: right;">
                           <i class="fa fa-clock-o" aria-hidden="true"></i>  AoE
                           <span class="tool-tiptext tool-tip-top">Anywhere on Earth</span>
