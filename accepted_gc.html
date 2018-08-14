@@ -68,6 +68,16 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Navigation -->
   <!-- Navigation -->
@@ -100,6 +110,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                 <a class="dropdown-item" href="important_dates.html">Important Dates</a>
+                <!-- <a class="dropdown-item" href="registration.html">Registration</a> -->
                 <a class="dropdown-item" href="venue.html">Venue</a>
                 <a class="dropdown-item" href="hotels.html">Hotels</a>
               </div>
@@ -149,6 +160,9 @@
                 <a class="dropdown-item" href="program_committee.html">Program Committee</a>
               </div>
             </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" href="#">Series Charter</a> -->
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link" style="padding-right: 1rem; padding-left: 1rem;" target=_blank href="http://conferences.computer.org/VLHCC/">
                 Series Charter
@@ -165,7 +179,7 @@
       </div>
     </nav>
 
-    <section class="section awards">
+    <section class="section papers p-justify">
       <!-- Page Content -->
       <div class="container-fluid section-heading">
 
@@ -173,7 +187,7 @@
           <div class="col-sm-1"></div>
           <div class="col-sm-9">
             <!-- Page Heading/Breadcrumbs -->
-            <h1 class="mt-4 mb-3">Awards
+            <h1 class="mt-4 mb-3">Accepted Graduate Consortium Students
               <small></small>
             </h1>
 
@@ -182,7 +196,24 @@
               </li>
             </ol>
 
-            <h3>The awards will be announced during the conference, and the information updated here!</h3>
+            <div class="row">
+
+              <div class="col-sm-12">
+                <ul>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Human-AI Interaction in Symbolic Problem Solving"</i>,&nbsp;  Ben Jones</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Supporting Effective Strategies for Resolving Vulnerabilities Reported by Static Analysis Tools"</i>,&nbsp;  Justin Smith</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"The Novice Programmer Needs a Plan"</i>,&nbsp;  Kathryn Cunnigham</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Using Program Analysis to Improve API Learnability"</i>,&nbsp;  Kyle Thayer</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Towards Scaffolding Complex Exploratory Data Science Programming Practices"</i>,&nbsp;  Mary Beth Kery</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Maximizing Productivity with Recommendations and Visual Analytics"</i>,&nbsp;  Nikhil Gurram</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Towards Supporting Knowledge Transfer of Programming Languages"</i>,&nbsp;  Nischal Shrestha</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Creating Interactive User Interfaces by Demonstration using Crowdsourcing"</i>,&nbsp;  Rebecca Krosnick</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Assisting the Development of Secure Mobile Apps with Natural Language Processing"</i>,&nbsp;  Xueqing Liu</li>
+                  <li style="padding: 0.5rem 1.25rem;"><i style="color: #000;">"Using Electroencephalography (EEG) to Understand and Compare Students’ Mental Effort as they Learn to Program Using Block-Based and Hybrid Programming Environments"</i>,&nbsp;  Yerika Jimenez</li>
+                </ul>
+              </div>
+            </div>
+
 
           </div>
           <div id="twitter-feed" class="col-sm-3">
@@ -196,9 +227,7 @@
             </div>
           </div>
         </div>
-
       </div>
-      <div class="section-line"></div>
 
     </section>
     <!-- /.container -->
