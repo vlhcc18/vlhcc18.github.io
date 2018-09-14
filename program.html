@@ -216,9 +216,98 @@
             <h4><i>NOTE: This program is iteratively under construction until the final version is achieved and announced.</i></h4>
 
             <div class="row">
+            <div class="col-sm-10">
+              <table class="table table-striped table-hover table-responsive">
+                <thead class="thead-default">
+                  <th class="col-sm-3">Pre-conference Events</th>
+                  <th class="col-sm-9" colspan="3">Conference Events</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Monday, 1</th>
+                    <th scope="row">Tuesday, 2</th>
+                    <th scope="row">Wednesday, 3</th>
+                    <th scope="row">Thursday, 4</th>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2"  class="table-secondary">Registration</td>
+                    <td class="table-secondary">Registration</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-danger">Opening Session</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-success">Workshops</td>
+                    <td class="table-info">Keynote by Jason Hong</td>
+                    <td class="table-info">Keynote by Geraldine Fitzpatrick</td>
+                    <td class="table-info">Keynote by Rodrigo Coutinho</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" colspan="4" class="table-warning text-center">Coffee Break</th>
+                  </tr>
+
+                  <tr>
+                    <td class="table-success">Workshops</td>
+                    <td class="table-info">Improving Programmer Efficiency</td>
+                    <td class="table-info">Posters I</td>
+                    <td class="table-info">Next Generation Tools</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" colspan="4" class="table-warning text-center">Lunch</th>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="table-success">Workshops</td>
+                    <td class="table-info">Socio-technical Tools and Analyses I</td>
+                    <td class="table-info">Posters II</td>
+                    <td class="table-info">APIs and Use of Programming Languages</td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-info">Showpieces' Talks</td>
+                    <td class="table-info">Understanding and Supporting Learning I</td>
+                    <td class="table-info">Socio-technical Tools and Analyses II</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" colspan="4" class="table-warning text-center">Coffee Break</th>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="table-success">Workshops</td>
+                    <td rowspan="2" class="table-info">Supporting End User Programmers</td>
+                    <td class="table-info">Understanding and Supporting Learning II</td>
+                    <td rowspan="2" class="table-info">Supporting Data Science</td>
+                  </tr>
+
+                   <tr>
+                    <td class="table-info">Modeling</td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td class="table-danger">Reception + Showpieces</td>
+                    <td class="table-danger">Conference Banquet</td>
+                    <td class="table-danger">Closing Session</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+            <div class="row">
               <div class="col-sm-2"></div>
               <div class="text-center col-sm-8">
-                <button class="btn btn-warning" onclick="openTab('Monday')">Monday</button>
+                <button class="btn btn-success" onclick="openTab('Monday')">Monday</button>
                 <button class="btn btn-info" onclick="openTab('Tuesday')">Tuesday</button>
                 <button class="btn btn-info" onclick="openTab('Wednesday')">Wednesday</button>
                 <button class="btn btn-info" onclick="openTab('Thursday')">Thursday</button>
@@ -234,63 +323,60 @@
                     <thead class="thead-default">
                       <tr>
                         <th class="col-xs-3 col-sm-2">Hour</th>
-                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>
-                        <th class="col-xs-3 col-sm-2">Room</th>                      
+                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>     
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">-</th>
+                        <th scope="row">8:30 - 9:00</th>
                         <td colspan="2" class="event-hooked">Registration</td>
-                        <td class="event-hooked">(n.a.)</td>
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">9:00 - 11:00</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th scope="row" rowspan="2">9:00 - 10:30</th>
+                        <td colspan="2" class="event-empty">Workshop Sessions</td>
                       </tr>
+                      <tr></tr>
+
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
+                        <th rowspan="2" scope="row">10:30 - 11:00</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK</td>
                       </tr>
+                      <tr></tr>
 
                       <tr>
                         <th scope="row" rowspan="2">11:00 - 12:30</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <td colspan="2" class="event-empty">Workshop Sessions</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
                       </tr>
 
                       <tr>
                         <th rowspan="2" scope="row">12:30 - 14:00</th>
                         <td colspan="2" rowspan="2" class="event-break-ws">LUNCH</td>
-                        <td rowspan="2" class="event-break-ws"> </td>
                       </tr>
                       <tr></tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">14:00 - 16:00</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th scope="row" rowspan="2">14:00 - 15:30</th>
+                        <td colspan="2" class="event-empty">Workshop Sessions</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">16:30 - Evening</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th rowspan="2" scope="row">15:30 - 16:00</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="2">16:00 - 17:30</th>
+                        <td colspan="2" class="event-empty">Workshop Sessions</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
                       </tr>
+
                     </tbody>
                   </table>
                 </div>
@@ -301,82 +387,207 @@
                     <thead class="thead-default">
                       <tr>
                         <th class="col-xs-3 col-sm-2">Hour</th>
-                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>
-                        <th class="col-xs-3 col-sm-2">Room</th>                      
+                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>       
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">-</th>
+                        <th scope="row">8:00 - 8:45</th>
                         <td colspan="2" class="event-hooked">Registration</td>
-                        <td class="event-hooked">(n.a.)</td>
                       </tr>
                       <tr>
-                        <th rowspan="2" scope="row">9:00 - 9:15</th>
+                        <th rowspan="2" scope="row">8:45 - 9:00</th>
                         <td colspan="2" rowspan="2" class="event-title">Opening Session</td>
-                        <td rowspan="2">(n.a.)</td>
                       </tr>
                       <tr></tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">9:15 - 10:30</th>
+                        <th scope="row" rowspan="2">9:00 - 10:15</th>
                         <td colspan="2" class="event-title event-category text-center">Keynote: 
                           <a href="keynotes.html#keynote-jason">Helping Developers with Privacy</a>
                         </td>
-                        <td class="event-category">(n.a.)</td>
                       </tr>
                       <tr>
                         <td colspan="2">
                           <p><i>Jason Hong</i></p>
-                          <p><small>Timing: 60+15 min</small></p>
                         </td>
-                        <td></td>
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">10:30 - 12:30</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
-                      </tr>
-
-                      <tr>
-                        <th rowspan="2" scope="row">12:30 - 14:00</th>
-                        <td colspan="2" rowspan="2" class="event-break">LUNCH</td>
-                        <td rowspan="2" class="event-break">(n.a.)</td>
+                        <th rowspan="2" scope="row">10:15 - 10:45</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK</td>
                       </tr>
                       <tr></tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">14:00 - 16:00</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th scope="row" rowspan="5">10:45 - 12:25</th>
+                        <td colspan="2" class="event-title event-break text-center">Improving Programmer Efficiency</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
+                        <td class="event-title">
+                          <p><i>Expresso: Building Responsive Interfaces with Keyframes</i></p>
+                          <p><small>Rebecca Krosnick, Sang Won Lee, Walter Lasecki and Steve Oney</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>The design and evaluation of a gestural keyboard for entering programming code on mobile devices </i></p>
+                          <p><small>Gennaro Costagliola, Vittorio Fuccella, Amedeo Leo, Luigi Lomasto and Simone Romano</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Evaluation of A Visual Programming Keyboard on Touchscreen Devices</i></p>
+                          <p><small>Islam Almusaly, Ronald Metoyer and Carlos Jensen</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>CodeDeviant: Helping Programmers Detect Edits That Accidentally Alter Program Behavior  </i></p>
+                          <p><small>Austin Henley and Scott Fleming</small></p>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <th rowspan="2" scope="row">12:25 - 14:00</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">LUNCH</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="3">14:00 - 14:40</th>
+                        <td colspan="2" class="event-title event-break text-center">Socio-technical Tools and Analyses I</td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Comparative Visualizations through Parameterization and Variability</i></p>
+                          <p><small>Karl Smeltzer and Martin Erwig</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Creating Socio-Technical Patches for Information Foraging: A Requirements Traceability Case Study</i></p>
+                          <p><small>Darius Cepulis and Nan Niu</small></p>
+                        </td>
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">16:00 - Evening</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th scope="row" rowspan="7">14:40 - 15:40</th>
+                        <td colspan="2" class="event-title event-break text-center">Showpieces' Talks</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
+                        <td class="event-title">
+                          <p><i>Code review tool for Visual Programming Languages</i></p>
+                          <p><small>Giuliano Ragusa and Henrique Henriques</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Fritz: A Tool for Spreadsheet Quality Assurance</i></p>
+                          <p><small>Patrick Koch and Konstantin Schekotihin</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>HTML Document Error Detector and Visualiser for Novice Programmers</i></p>
+                          <p><small>Steven Schmoll, Anith Vishwanath Meeduturi, Mohammad Ammar Siddiqui, Boppaiah Koothanda Subbaiah and Caslon Chua</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Automated Test Generation Based on a Visual Language Applicational Model</i></p>
+                          <p><small>Mariana Cabêda and Pedro Santos</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>The GenderMag Recorder's Assistant</i></p>
+                          <p><small>Christopher Mendez, Andrew Anderson, Brijesh Bhuva and Margaret Burnett</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Toward an Efficient User Interface for Block-Based Visual Programming</i></p>
+                          <p><small> Yota Inayama and Hiroshi Hosobe</small></p>
+                        </td>
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">Evening</th>
-                        <td colspan="3" class="event-social">Reception</td>
+                        <th rowspan="2" scope="row">15:40 - 16:10</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="5">16:10 - 17:50</th>
+                        <td colspan="2" class="event-title event-break text-center">Supporting End User Programmers</td>
                       </tr>
                       <tr>
-                        <td colspan="3" class="event-social">Showpieces</td>
+                        <td class="event-title">
+                          <p><i>End-User Development in Social Psychology Resesarch: Factors for Adoption</i></p>
+                          <p><small>Daniel Rough and Aaron Quigley</small></p>
+                        </td>
                       </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Calculation view: multiple-representation editing in spreadsheets</i></p>
+                          <p><small>Advait Sarkar, Andrew Gordon, Neil Toronto and Simon Peyton Jones</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>No half-measures: A study of manual and tool-assisted end-user programming tasks in Excel</i></p>
+                          <p><small>Rahul Pandita, Chris Parnin, Felienne Hermans and Emerson Murphy-Hill</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>APPINITE: A Multi-Modal Interface for Specifying Data Descriptions in Programming by Demonstration Using Verbal Instructions</i></p>
+                          <p><small>Toby Jia-Jun Li, Igor Labutov, Xiaohan Nancy Li, Xiaoyi Zhang, Wenze Shi, Wanling Ding, Tom M. Mitchell and Brad A. Myers</small></p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="7">18:00 - 22:00</th>
+                        <td colspan="2" class="event-title event-social text-center">Welcome Reception and Tool Showpieces</td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Code review tool for Visual Programming Languages</i></p>
+                          <p><small>Giuliano Ragusa and Henrique Henriques</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Fritz: A Tool for Spreadsheet Quality Assurance</i></p>
+                          <p><small>Patrick Koch and Konstantin Schekotihin</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>HTML Document Error Detector and Visualiser for Novice Programmers</i></p>
+                          <p><small>Steven Schmoll, Anith Vishwanath Meeduturi, Mohammad Ammar Siddiqui, Boppaiah Koothanda Subbaiah and Caslon Chua</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Automated Test Generation Based on a Visual Language Applicational Model</i></p>
+                          <p><small>Mariana Cabêda and Pedro Santos</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>The GenderMag Recorder's Assistant</i></p>
+                          <p><small>Christopher Mendez, Andrew Anderson, Brijesh Bhuva and Margaret Burnett</small></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Toward an Efficient User Interface for Block-Based Visual Programming</i></p>
+                          <p><small> Yota Inayama and Hiroshi Hosobe</small></p>
+                        </td>
+                      </tr>
+
                     </tbody>
                   </table>
                 </div>
@@ -387,71 +598,280 @@
                     <thead class="thead-default">
                       <tr>
                         <th class="col-xs-3 col-sm-2">Hour</th>
-                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>
-                        <th class="col-xs-3 col-sm-2">Room</th>                      
+                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>       
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">-</th>
-                        <td colspan="2" class="event-hooked">Registration</td>
-                        <td class="event-hooked">(n.a.)</td>
-                      </tr>
 
                       <tr>
                         <th scope="row" rowspan="2">9:00 - 10:15</th>
                         <td colspan="2" class="event-title event-category text-center">Keynote: 
                           <a href="keynotes.html#keynote-geraldine">Mind the gap: modelling the human in human-centric computing</a>
                         </td>
-                        <td class="event-category">(n.a.)</td>
                       </tr>
                       <tr>
                         <td colspan="2">
                           <p><i>Geraldine Fitzpatrick</i></p>
-                          <p><small>Timing: 60+15 min</small></p>
                         </td>
-                        <td></td>
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">10:15 - 12:30</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
-                      </tr>
-
-                      <tr>
-                        <th rowspan="2" scope="row">12:30 - 14:00</th>
-                        <td colspan="2" rowspan="2" class="event-break">LUNCH</td>
-                        <td rowspan="2" class="event-break">(n.a.)</td>
+                        <th rowspan="2" scope="row">10:15 - 10:45</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK</td>
                       </tr>
                       <tr></tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">14:00 - 16:00</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th scope="row" rowspan="12">10:45 - 12:00</th>
+                        <td colspan="2" class="event-title event-break text-center">Posters I</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
+                        <td class="event-title">
+                          <p><i>Human-Centric Programming in the Large - Command Languages to Scalable Cyber Training</i></p>
+                          <p><small>Prasun Dewan, Blake Joyce and Nirav Merchant</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Visual Knowledge Negotiation</i></p>
+                          <p><small>Alan Blackwell, Luke Church, Matthew Mahmoudi and Mariana Marasoiu</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>A Modelling Language for Defining Cloud Simulation Scenarios in RECAP Project Context</i></p>
+                          <p><small>Cleber Matos de Morais, Patricia Takako Endo, Sergej Svorobej and Theo Lynn</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>A Vision for Interactive Suggested Examples for Novice Programmers</i></p>
+                          <p><small>Michelle Ichinco</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>An Exploratory Study of Web Foraging to Understand and Support Programming Decisions</i></p>
+                          <p><small>Jane Hsieh, Xieyang Liu, Brad Myers and Aniket Kittur</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Graphical Visualization of Difficulties Predicted from Interaction Logs</i></p>
+                          <p><small>Duri Long, Kevin Wang, Jason Carter and Prasun Dewan</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>How End Users Express Conditionals in Programming by Demonstration for Mobile Apps</i></p>
+                          <p><small>Marissa Radensky, Toby Jia-Jun Li and Brad Myers</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Educational Impact of Syntax Directed Translation Visualization, a Preliminary Study</i></p>
+                          <p><small>Damián Nicolalde and Jaime Urquiza-Fuentes</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Semantic Clone Detection: Can Source Code Comments Help?</i></p>
+                          <p><small>Akash Ghosh, Sandeep Kaur Kuttal</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>What Makes a Good Developer? An Empirical Study of Developers' Technical and Social Competencies</i></p>
+                          <p><small>Cheng Zhou, Sandeep Kaur Kuttal, Iftekhar Ahmed</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Visualizing Path Exploration to Assist Problem Diagnosis for Structural Test Generation</i></p>
+                          <p><small>Jiayi Cao, Angello Astorga, Siwakorn Srisakaokul, Zhengkai Wu, Xueqing Liu, Xusheng Xiao, Tao Xie</small></p>
+                        </td>
+                        
+                      </tr>
+
+
+                      <tr>
+                        <th rowspan="2" scope="row">12:05 - 13:30</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">LUNCH</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="12">13:30 - 14:30</th>
+                        <td colspan="2" class="event-title event-break text-center">Posters II</td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Usability Challenges that Novice Programmers Experience when Using Scratch for the First Time</i></p>
+                          <p><small>Yerika Jimenez, Amanpreet Kapoor and Christina Gardner-McCune</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Using Electroencephalography (EEG) to Understand and Compare Students’ Mental Effort as they Learn to Program Using Block-Based and Hybrid Programming Environments</i></p>
+                          <p><small>Yerika Jimenez</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Human-AI Interaction in Symbolic Problem Solving</i></p>
+                          <p><small>Ben Jones</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Supporting Effective Strategies for Resolving Vulnerabilities Reported by Static Analysis Tools</i></p>
+                          <p><small>Justin Smith</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>The Novice Programmer Needs a Plan</i></p>
+                          <p><small>Kathryn Cunnigham</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Using Program Analysis to Improve API Learnability</i></p>
+                          <p><small>Kyle Thayer</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Towards Scaffolding Complex Exploratory Data Science Programming Practices</i></p>
+                          <p><small>Mary Beth Kery</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Towards Supporting Knowledge Transfer of Programming Languages</i></p>
+                          <p><small>Nischal Shrestha</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Creating Interactive User Interfaces by Demonstration using Crowdsourcing</i></p>
+                          <p><small>Rebecca Krosnick</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Assisting the Development of Secure Mobile Apps with Natural Language Processing</i></p>
+                          <p><small>Xueqing Liu</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>BioWebEngine, a generation environment for integrated applications for bioinformatic research</i></p>
+                          <p><small>Paolo Bottoni, Tiziana Castrignano, Tiziano Flati and Francesco Maggi</small></p>
+                        </td>
+                        
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">16:00 - Evening</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th scope="row" rowspan="3">14:30 - 15:10</th>
+                        <td colspan="2" class="event-title event-break text-center">Understanding and Supporting Learning I</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
+                        <td class="event-title">
+                          <p><i>The Impact of Culture on Learner Behavior in Educational Debuggers</i></p>
+                          <p><small>Kyle Thayer, Philip Guo and Katharina Reinecke</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Tinkering in the Wild: What Leads to Success for Female End-User Programmers?</i></p>
+                          <p><small>Louise Ann Lyon, Emily Green and Chelsea Clayton</small></p>
+                        </td>
+                        
                       </tr>
 
                       <tr>
-                        <th scope="row">Evening</th>
+                        <th rowspan="2" scope="row">15:10 - 15:40</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK (with Posters)</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="3">15:40 - 16:20</th>
+                        <td colspan="2" class="event-title event-break text-center">Understanding and Supporting Learning II</td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Exploring the Relationship between Programming Difficulty and Web Accesses</i></p>
+                          <p><small>Duri Long, Kun Wang, Jason Carter and Prasun Dewan</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>A Large-Scale Empirical Study on Android Runtime Permission Rationale Messages</i></p>
+                          <p><small>Xueqing Liu, Yue Leng, Wei Yang, Wenyu Wang, Chengxiang Zhai and Tao Xie</small></p>
+                        </td>
+                        
+                      </tr>
+                      
+
+                      <tr>
+                        <th scope="row" rowspan="5">16:20 - 17:20</th>
+                        <td colspan="2" class="event-title event-break text-center">Modeling</td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Automatic Layout and Label Management for UML Sequence Diagrams</i></p>
+                          <p><small>Christoph Daniel Schulze, Gregor Hoops and Reinhard Von Hanxleden</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Evaluating the efficiency of using a search-based automated model merge technique</i></p>
+                          <p><small>Ankica Barisic, Csaba Debrecani, Daniel Varro, Vasco Amaral and Miguel Goulão</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>SiMoNa: A Proof-of-concept Domain Specific Modeling Language for IoT Infographics</i></p>
+                          <p><small>Cleber Matos Morais, Judith Kelner, Djamel Sadok and Theo Lynn</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Visual Modeling of Cyber Deception</i></p>
+                          <p><small>Cristiano De Faveri and Ana Moreira</small></p>
+                        </td>
+                        
+                      </tr>
+
+                      <tr>
+                        <th scope="row">19:00 - 22:00</th>
                         <td colspan="3" class="event-social">Conference Banquet</td>
                       </tr>
                     </tbody>
@@ -464,68 +884,161 @@
                     <thead class="thead-default">
                       <tr>
                         <th class="col-xs-3 col-sm-2">Hour</th>
-                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>
-                        <th class="col-xs-3 col-sm-2">Room</th>                      
+                        <th colspan="2" class="col-xs-6 col-sm-8">Event</th>        
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">-</th>
-                        <td colspan="2" class="event-hooked">Registration</td>
-                        <td class="event-hooked">(n.a.)</td>
-                      </tr>
 
                       <tr>
                         <th scope="row" rowspan="2">9:00 - 10:15</th>
                         <td colspan="2" class="event-title event-category text-center">Keynote: 
                           <a href="keynotes.html#keynote-rodrigo">Bringing visual languages to market: The OutSystems story</a>
                         </td>
-                        <td class="event-category">(n.a.)</td>
                       </tr>
                       <tr>
                         <td colspan="2">
                           <p><i>Rodrigo Sousa Coutinho</i></p>
-                          <p><small>Timing: 60+15 min</small></p>
                         </td>
-                        <td></td>
+                        
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">10:15 - 12:30</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
-                      </tr>
-
-                      <tr>
-                        <th rowspan="2" scope="row">12:30 - 14:00</th>
-                        <td colspan="2" rowspan="2" class="event-break">LUNCH</td>
-                        <td rowspan="2" class="event-break">(n.a.)</td>
+                        <th rowspan="2" scope="row">10:15 - 10:45</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK (with Posters)</td>
                       </tr>
                       <tr></tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">14:00 - 16:00</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th scope="row" rowspan="5">10:45 - 12:25</th>
+                        <td colspan="2" class="event-title event-break text-center">Next Generation Tools</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
+                        <td class="event-title">
+                          <p><i>Interactions for Untangling Messy History in a Computational Notebooks</i></p>
+                          <p><small>Mary Beth Kery and Brad Myers</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Supporting Remote Real-time Expert Help:  Opportunities and Challenges for Novice 3D Modelers</i></p>
+                          <p><small>Parmit Chilana, Nathaniel Hudson, Srinjita Bhaduri, Prashant Shashikumar and Shaun Kane</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>ZenStates: Easy-to-Understand Yet Expressive Specifications for Creative Interactive Environments</i></p>
+                          <p><small>Jeronimo Barbosa, Marcelo M. Wanderley and Stéphane Huot</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>It's Like Python But: Supporting Transfer of Programming Language Knowledge</i></p>
+                          <p><small>Nischal Shrestha, Titus Barik and Chris Parnin</small></p>
+                        </td>
+                        
                       </tr>
 
                       <tr>
-                        <th scope="row" rowspan="2">16:00 - Evening</th>
-                        <td colspan="2" class="event-empty">(T.B.A.)</td>
-                        <td class="event-empty"> </td>
+                        <th rowspan="2" scope="row">12:25 - 13:30</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">LUNCH</td>
+                      </tr>
+                      <tr></tr>
+
+
+                      <tr>
+                        <th scope="row" rowspan="4">13:130 - 14:35</th>
+                        <td colspan="2" class="event-title event-break text-center">APIs and Use of Programming Languages</td>
                       </tr>
                       <tr>
-                        <td colspan="2" class="event-empty">.</td>
-                        <td></td>
+                        <td class="event-title">
+                          <p><i>What Programming Languages Do Developers Use? A Theory of Static vs Dynamic Language Choice</i></p>
+                          <p><small>Craig Anslow, Aaron Pang and James Noble</small></p>
+                        </td>
+                        
                       </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>API Designers in the Field: Design Practices and Challenges for Creating Usable APIs</i></p>
+                          <p><small>Lauren Murphy, Mary Beth Kery, Tosin Alliyu, Andrew Macvean and Brad A. Myers</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>DeployGround: A Framework for Streamlined Programming from API Playgrounds to Application Deployment</i></p>
+                          <p><small>Jun Kato and Masataka Goto</small></p>
+                        </td>
+                        
+                      </tr>
+
+                      <tr>
+                        <th scope="row" rowspan="3">14:35 - 15:15</th>
+                        <td colspan="2" class="event-title event-break text-center">Socio-technical Tools and Analyses II</td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Automating (or not) a Socio-Technical “Tool” for Socio-Technical Systems</i></p>
+                          <p><small>Christopher Mendez, Zoe Steine-Hanson, Alannah Oleson, Amber Horvath, Charles Hill, Claudia Hilderbrand, Anita Sarma and Margaret Burnett</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Searching Over Search Trees for Human-AI Collaboration in Exploratory Problem Solving: A Case Study in Algebra</i></p>
+                          <p><small>Benjamin Jones and Steven Tanimoto</small></p>
+                        </td>
+                        
+                      </tr>
+
+                      <tr>
+                      <th rowspan="2" scope="row">15:15 - 15:45</th>
+                        <td colspan="2" rowspan="2" class="event-break-ws">COFFEE BREAK (with Posters)</td>
+                      </tr>
+                      <tr></tr>
+
+                      <tr>
+                        <th scope="row" rowspan="5">15:45 - 16:55</th>
+                        <td colspan="2" class="event-title event-break text-center">Supporting Data Science</td>
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Milo: A visual programming environment for Data Science Education</i></p>
+                          <p><small>Arjun Rao, Ayush Bihani and Mydhili Nair</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>A Usability Analysis of Blocks Based Programming Editors using Cognitive Dimensions</i></p>
+                          <p><small>Robert Holwerda and Felienne Hermans</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>Stream Analytics in IoT Mashup Tools</i></p>
+                          <p><small>Tanmaya Mahapatra, Christian Prehofer, Ilias Gerostathopoulos and Ioannis Varsamidakis</small></p>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td class="event-title">
+                          <p><i>BONNIE: Building Online Narratives from Noteworthy Interaction Events</i></p>
+                          <p><small>Vinícius Segura, Juliana Jansen and Simone Diniz Junqueira Barbosa</small></p>
+                        </td>
+                        
+                      </tr>
+
+
+                      <tr>
+                        <th scope="row">16:55 - 17:10</th>
+                        <td colspan="3" class="event-social">Closing Session</td>
+                      </tr>
+
+
 
                     </tbody>
                   </table>
@@ -536,7 +1049,7 @@
 
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <span class="bg-warning">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;: Workshops<br/>
+                <span class="bg-warning">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;: Breaks<br/>
                 <span class="bg-info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;: Main Conference<br/>
                 <span class="bg-danger">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;: Social Events<br/>
               </div>
@@ -555,100 +1068,100 @@
               data-url="https://vlhcc18.github.io/program.html"
               data-hashtags="vlhcc,vlhcc2018"
               data-size="large">
-            Tweet</a>
-          </div>
-
-        </div>
-        <div id="twitter-feed" class="col-sm-3">
-          <div id="twitter-ref">
-            <div class="spacer"></div>
-            <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
-          </div>
-          <div id="twitter-timeline-frame">
-            <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section-line"></div>
-  </section>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container" style="max-width: 1060px;">
-      <div class="row">
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4 style="font-weight: bold;">VL/HCC 18</h4>
-          <div class="row">
-            <div class="col-sm-2">
-              <i class="fa fa-home"></i>
+              Tweet</a>
             </div>
-            <div class="col-sm-10">
-              Universidade NOVA de Lisboa<br/>
-              Campus de Campolide<br/>
-              1099-085 Lisboa<br/>
+
+          </div>
+          <div id="twitter-feed" class="col-sm-3">
+            <div id="twitter-ref">
+              <div class="spacer"></div>
+              <i class="fa fa-3x fa-twitter-square" aria-hidden="true">   Tweets by ‎<a href="#">@vlhc</a></i>
+            </div>
+            <div id="twitter-timeline-frame">
+              <a class="twitter-timeline" href="https://twitter.com/vlhcc" data-tweet-limit="3">>Tweets by vlhcc</a> 
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
-
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Attending</h4>
-          <a href="important_dates.html" class="text-white">Important Dates</a>
-          <!-- <a href="registration.html" class="text-white">Registration</a> -->
-
-          <br/>
-          <a href="venue.html" class="text-white">Venue</a><br/>
-          <a href="hotels.html" class="text-white">Hotels</a>
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Calls</h4>
-          <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
-          <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
-          <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
-          <a href="call_showpieces.html" class="text-white">Call for Showpieces</a><br/>
-          <a href="call_posters.html" class="text-white">Call for Posters</a><br/>
-          <a href="graduate_consortium.html" class="text-white">Graduate Consortium</a><br/>
-          <a href="call_mip.html" class="text-white">Call for Nominations</a><br/>
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Program</h4>
-
-          <a href="program_overview.html" class="text-white">Overview</a><br/>
-          <a href="program.html" class="text-white">Detailed</a><br/>
-          <a href="accepted_papers.html" class="text-white">Accepted Papers</a><br/>
-          <a href="accepted_showpieces.html" class="text-white">Accepted Showpieces</a><br/>
-          <a href="accepted_posters.html" class="text-white">Accepted Posters</a><br/>
-
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <a href="workshops.html" class="text-white"> <h4>Workshops</h4> </a>
-          <a href="http://sems2018.ist.tugraz.at/" target=_blank class="text-white">SEMS'18</a><br/>
-          <a href="https://www.cs.washington.edu/dtshps2018/" class="text-white">DTSHPS'18</a>
-        </div>
-        <div class="col-md-2 col-sm-2 text-white">
-          <h4>Committees</h4>
-          <a href="organizers.html" class="text-white">Org. Committee</a><br/>
-          <a href="program_committee.html" class="text-white">Prog. Committee</a>
         </div>
       </div>
-      <div class="row spacer">
-        <div class="col-sm-12 text-center">
-          <p class="m-0 text-center text-white">>  <a href="https://www.ieee.org/security-privacy.html" target="_blank" style="color: white; font-weight: bold;">IEEE Privacy Policy</a>  <</p>
-        </div>
-      </div>
-    </div>
+
+
+      <div class="section-line"></div>
+    </section>
     <!-- /.container -->
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container" style="max-width: 1060px;">
+        <div class="row">
+          <div class="col-md-2 col-sm-2 text-white">
+            <h4 style="font-weight: bold;">VL/HCC 18</h4>
+            <div class="row">
+              <div class="col-sm-2">
+                <i class="fa fa-home"></i>
+              </div>
+              <div class="col-sm-10">
+                Universidade NOVA de Lisboa<br/>
+                Campus de Campolide<br/>
+                1099-085 Lisboa<br/>
+              </div>
+            </div>
 
-</body>
+          </div>
+          <div class="col-md-2 col-sm-2 text-white">
+            <h4>Attending</h4>
+            <a href="important_dates.html" class="text-white">Important Dates</a>
+            <!-- <a href="registration.html" class="text-white">Registration</a> -->
 
-</html>
+            <br/>
+            <a href="venue.html" class="text-white">Venue</a><br/>
+            <a href="hotels.html" class="text-white">Hotels</a>
+          </div>
+          <div class="col-md-2 col-sm-2 text-white">
+            <h4>Calls</h4>
+            <a href="call_papers.html" class="text-white">Call for Papers</a><br/>
+            <a href="call_workshops.html" class="text-white">Call for Workshops</a><br/>
+            <a href="call_sponsors.html" class="text-white">Call for Sponsors</a><br/>
+            <a href="call_showpieces.html" class="text-white">Call for Showpieces</a><br/>
+            <a href="call_posters.html" class="text-white">Call for Posters</a><br/>
+            <a href="graduate_consortium.html" class="text-white">Graduate Consortium</a><br/>
+            <a href="call_mip.html" class="text-white">Call for Nominations</a><br/>
+          </div>
+          <div class="col-md-2 col-sm-2 text-white">
+            <h4>Program</h4>
+
+            <a href="program_overview.html" class="text-white">Overview</a><br/>
+            <a href="program.html" class="text-white">Detailed</a><br/>
+            <a href="accepted_papers.html" class="text-white">Accepted Papers</a><br/>
+            <a href="accepted_showpieces.html" class="text-white">Accepted Showpieces</a><br/>
+            <a href="accepted_posters.html" class="text-white">Accepted Posters</a><br/>
+
+          </div>
+          <div class="col-md-2 col-sm-2 text-white">
+            <a href="workshops.html" class="text-white"> <h4>Workshops</h4> </a>
+            <a href="http://sems2018.ist.tugraz.at/" target=_blank class="text-white">SEMS'18</a><br/>
+            <a href="https://www.cs.washington.edu/dtshps2018/" class="text-white">DTSHPS'18</a>
+          </div>
+          <div class="col-md-2 col-sm-2 text-white">
+            <h4>Committees</h4>
+            <a href="organizers.html" class="text-white">Org. Committee</a><br/>
+            <a href="program_committee.html" class="text-white">Prog. Committee</a>
+          </div>
+        </div>
+        <div class="row spacer">
+          <div class="col-sm-12 text-center">
+            <p class="m-0 text-center text-white">>  <a href="https://www.ieee.org/security-privacy.html" target="_blank" style="color: white; font-weight: bold;">IEEE Privacy Policy</a>  <</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+  </html>
